@@ -18,6 +18,10 @@
     "maplibre-gl": "^3.3.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "vite": "^4.4.9"
-  }
+  },
+  "homepage": "https://wcchin.github.io/sg_health_access",
+  "predeploy": "yarn run build",
+  "deploy": "gh-pages -d build"
 }

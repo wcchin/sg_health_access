@@ -13,7 +13,7 @@ const MAPLIBRE_STYLE =
   "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
 
 // BIXI rides
-const DATA_PATH = `https://gist.githubusercontent.com/ilyabo/68d3dba61d86164b940ffe60e9d36931/raw/a72938b5d51b6df9fa7bba9aa1fb7df00cd0f06a`;
+const DATA_PATH = `https://raw.githubusercontent.com/wcchin/sg_health_access/main/data`;
 
 async function fetchData() {
   return await Promise.all([
@@ -23,7 +23,7 @@ async function fetchData() {
       lat: Number(row.lat),
       lon: Number(row.lon),
     })),
-    csv(`${DATA_PATH}/flows.csv`, (row) => ({
+    csv(`${DATA_PATH}/flows_clinic.csv`, (row) => ({
       origin: row.origin,
       dest: row.dest,
       count: Number(row.count),
@@ -47,7 +47,7 @@ fetchData().then((data) => {
     // Note: deck.gl will be in charge of interaction and event handling
     interactive: false,
     center: [initialViewState.longitude, initialViewState.latitude],
-    zoom: initialViewState.zoom,
+    zoom: initialViewState.zoom+0,
     bearing: initialViewState.bearing,
     pitch: initialViewState.pitch,
   });
@@ -62,7 +62,7 @@ fetchData().then((data) => {
     onViewStateChange: ({viewState}) => {
       map.jumpTo({
         center: [viewState.longitude, viewState.latitude],
-        zoom: viewState.zoom,
+        zoom: viewState.zoom+0,
         bearing: viewState.bearing,
         pitch: viewState.pitch,
       });
