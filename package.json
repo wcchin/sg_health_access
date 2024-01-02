@@ -17,6 +17,7 @@
     "@deck.gl/layers": "^8.9.28",
     "@flowmap.gl/data": "8.0.1",
     "@flowmap.gl/layers": "8.0.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "d3-fetch": "^3.0.1",
     "maplibre-gl": "^3.3.1"
   },
