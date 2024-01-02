@@ -1,15 +1,15 @@
 {
-  "name": "flowmap.gl-purejs-example",
+  "name": "sg_health_access",
   "version": "0.0.2",
   "type": "module",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "homepage": "https://wcchin.github.io/sg_health_access/",
   "dependencies": {
