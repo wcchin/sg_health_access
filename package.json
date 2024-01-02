@@ -11,7 +11,7 @@
     "predeploy": "yarn run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://wcchin.github.io/sg_health_access",
+  "homepage": "https://wcchin.github.io/sg_health_access/",
   "dependencies": {
     "@deck.gl/core": "^8.9.28",
     "@deck.gl/layers": "^8.9.28",
