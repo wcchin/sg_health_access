@@ -33,3 +33,46 @@ a:hover {
 		background-color: var(--ctp-frappe-mantle);
 		color: var(--ctp-latte-base);
 }
+.bgrv {
+  background-color: var(--ctp-latte-base);
+  color: var(--ctp-latte-text);
+}
+
+.bgrv a {
+  color: var(--ctp-latte-blue);
+  text-decoration: underline;
+}
+
+.bgrv a:hover {
+  color: var(--ctp-latte-blue);
+  background-color: var(--ctp-latte-mantle);
+}
+
+a {
+  color: var(--ctp-frappe-blue);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--ctp-frappe-blue);
+  background-color: var(--ctp-frappe-mantle);
+}
+
+
+.vertical-center {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.line:after {
+  content: '\A';
+  white-space: pre;
+}
+
+#box1 {
+  display: inline-block;
+  vertical-align: baseline; /* here */
+}
