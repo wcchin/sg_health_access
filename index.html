@@ -19,20 +19,20 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   
   
-  
   <!--<link rel="stylesheet" href="css/navbar.css">-->
   
   
   
+  <!--<link rel="stylesheet" href="css/popup_modal.css">--> 
   <!--<link rel="stylesheet" href="css/icons/academicons.min.css">-->
-  
+  <!--<link rel="stylesheet" href="css/icons/microns.css">-->
   
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.ico">
 
-  <link rel="stylesheet" href="/sg_health_access/assets/index-3c5306bd.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-bbe1002a.css">
 </head>
 <body class="bg-black">
     
@@ -53,7 +53,8 @@
     left: 0px;
     z-index: -1;
     background-size: cover;
-    background-image:url(&quot;resources/images/ee.png&quot;); opacity:0.3;'></div>
+    background-image:url(&quot;images/ee.png&quot;); opacity:0.3;'>
+	</div>
     </div>
   </div>
   
@@ -64,156 +65,212 @@
       <div class="col nav-item"><b id="siteNameNav"></b></div>
     </div>
   </div>-->
+  <!--
   <div class="c">
     <div class="pv2 row" id="wrap">
       <div class="col" id="navlist"></div>
       <div class="2 col"><b id="siteNameNav" class="nav-item pv2"></b></div>
     </div>
   </div>
-  
+  -->
   
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--
   <div class="c">
 	<div class="tab-content" id="tab-location">
 	  <div class="w-100" id="Motivation"></div>
 	  <div class="w-100" id="Radiation model"></div>
 	  <div class="w-100" id="Accessibility"></div>
 	</div>
-  </div>  <!-- c, container -->
+  </div>-->  <!-- c, container -->
   
     <!-- the top button
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--<button id="topBtn" class="btn primary">Primary Button</button>-->
-  <a id="topBtn" class="btn primary bg-info pill" href="#wrap"><span class="mu mu-up"></span>Top</a>
+  <!--<a id="topBtn" class="btn primary bg-info pill" href="#wrap"><span class="mu mu-up"></span>Top</a>-->
 
 
-
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> Motivation</h3>
-	</div>
+  
+  <div class="tc vh-100 bgrv">
+  	<div class="row w-100 pv2">
+	  <div class="title mt2">
+	    <h3><span class="typcn typcn-coffee"></span> Motivation</h3>
+	  </div>
 		  
-	<div class="row">
-	  <div class="2 col">
+	  <div class="row pv2">
+	    <div class="c">
+	      <div class="12 col" align="justify">
+		    <p>
+				Health-care service is crucial to everyone's daily life. Clinics, compared to medical centers and hospitals, are more accessible for people. In a densely populated city like Singapore, there are people everywhere, and the clinics are also distributed in every neighborhood. However, the question on "<i>is there differences in terms of accessibility to clinics</i>" remains important for exploration. 
+			</p>
+		    <p>
+				This project is inspired by the 2-Step Floating Catchment Area (2SFCA) approach and the radiation model. 
+				2SFCA included two steps: calculate the ratio of the number of services to population in the service area; and sum up the ratios within the service area. Therefore, the threshold value of travel distance or time is a key in defining the service area. 
+				Radiation model is often used to estimate the flows between a pair of locations for some purposes of travel. Using radiation model, we can estimate the flows between places to access a health-care facility, e.g., clinics. The flows can then be used as a direct measurement of the population in service area for the first step of 2SFCA. In this pilot project, we intended to test the feasibility and issues of this framework. 
+			</p>
+	      </div>
+	    </div>
 	  </div>
-	  <div class="8 col" align="justify">
-		<p class="w-100">some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text </p>
-	  </div>
-	  <div class="2 col">
-	  </div>
-	</div>
+    </div>
+  </div>
 	
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> Radiation model</h3>
-	</div>
-	<div class="row">
-	  <div class="2 col">
-		<p></p>
-	  </div>
-	  <div class="8 col" align="justify">
-		<h3> Estimated flow </h3>
-		<p class="w-100">
-		 <iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="600"></iframe> 
-		</p>
-		<p>Estimation based on the number of clinics and population size in each origin and destination hexagon cell. <a href="./flowmapgl_radiation_clinic/index.html" target="_blank">See here for full-page map.</a></p>
-	  </div>
-	  <div class="2 col">
-		<p></p>
-	  </div>
-	</div>
-	
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> Accessibility</h3>
-	</div>
-	<div class="row">
-	  <div class="2 col">
-		<p></p>
-	  </div>
-	  <div class="8 col" align="justify">
-		<h3> The received services and the number of clinics. </h3>
-		<p class="w-100">
-		 <iframe src="./keplergl-accessibility_clinic/index.html" title="Accessibility and inflow" width="100%" height="600"></iframe> 
-		</p>
-		<p>The received services is calculated based on a 2SFCA approach. The underlying hexagon cells show the number of clinics at each location. <a href="./keplergl-accessibility_clinic/index.html" target="_blank">See here for full-page map.</a></p>
-	  </div>
-	  <div class="2 col">
-		<p></p>
-	  </div>
-	</div>
-
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> Methodology</h3>
-	</div>
-		  
-	<div class="row">
-	  <div class="2 col">
-	  </div>
-	  <div class="8 col" align="justify">
-		<h3> Short-bio </h3>
-		<p class="w-100">some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text </p>
-	  </div>
-	  <div class="2 col">
-	  </div>
-	</div>
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> The Tools and Data Source </h3>
-	</div>
-		  
+  <div class="tc vh-100">
 	<div class="row w-100">
-	  <div class="2 col">
+	  <div class="title mt2">
+	    <h3><span class="typcn typcn-arrow-maximise"></span> Flow Estimation </h3>
 	  </div>
-	  <div class="8 col" align="justify">
-		<h3> Tools </h3>
-		
-		<div class="row w-100">
-			<div class="4 col">
-				<h4>Processing and Analysis</h4>
-				<ul>
-					<li>First Item</li>
-					<li>
-						Second Item
-						<ul>
-							<li>Sub Item 1</li>
-							<li>Sub Item 2</li>
-						</ul>
-					</li>
-					<li>Third Item</li>
-				</ul>
-			</div>
-			<div class="4 col">
-				<h4>Visualization</h4>
-				<ul>
-					<li>First Item</li>
-					<li>
-						Second Item
-						<ul>
-							<li>Sub Item 1</li>
-							<li>Sub Item 2</li>
-						</ul>
-					</li>
-					<li>Third Item</li>
-				</ul>
-			</div>
+	  <div class="row">
+		<div class="c">
+	      <div class="12 col w-100 vh-100" align="justify">
+		  <iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="65%"></iframe> 
+		  <p>
+			The widths of arrows indicate the flow size. The size of circles show the total incoming/outgoing flows. Black circles: more outgoing, white circles with inner ring: more incoming, white circles: almost same. 
+			<br /><a href="./flowmapgl_radiation_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
+		  </p>
+	      </div>
 		</div>
 	  </div>
-	  <div class="2 col">
-	  </div>
-	</div>
-	<div class="title mt4">
-	  <h3><span class="typcn typcn-user"></span> The Team</h3>
-	</div>
-		  
-	<div class="row">
-	  <div class="2 col">
-	  </div>
-	  <div class="8 col" align="justify">
-		<h3> Short-bio </h3>
-		<p class="w-100">some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text </p>
-	  </div>
-	  <div class="2 col">
-	  </div>
-	</div>
+    </div>
+  </div>
 	
+  <div class="tc vh-100 bgrv">
+	<div class="row w-100">
+	  <div class="title mt2">
+	    <h3><span class="typcn typcn-location"></span> Service Intensity </h3>
+	  </div>
+	  <div class="c">
+	    <div class="row">
+	      <div class="12 col w-100 vh-100" align="justify">
+		    <iframe src="./keplergl-accessibility_clinic/index.html" title="Accessibility and inflow" width="100%" height="70%"></iframe> 
+			<p>
+				The received service intensities are calculated based on a 2SFCA approach. The underlying hexagon cells show the number of clinics at each location. The size and colors of circles indicate the health-care intensities. 
+				<br /><a href="./keplergl-accessibility_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
+			</p>
+	      </div>
+	    </div>
+	  </div>
+    </div>
+  </div>
+
+  <div class="tc vh-100">
+	<div class="row w-100">
+	  <div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
+	  </div>
+	  <div class="c">
+	  <div class="row w-100 pv3">
+		<div class="12 col" align="justify">
+		  <p>
+			some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+		  </p>
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="tc vh-100 bgrv">
+	<div class="row w-100 pv2">
+	  <div class="title mt2">
+	    <h3><span class="typcn typcn-compass"></span> Methodology </h3>
+	  </div>
+	  <div class="c">	  
+  	    <div class="row">
+	      <div class="12 col" align="justify">
+		    <h3> Distance estimation: Dijakstra algorithm </h3>
+		    <p>
+			  some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+		    </p>
+		    <h3> Flow estimation: Radiation model </h3>
+			<p>
+			  some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+			</p>
+		    <h3> Service intensity: 2-Step Floating Catchment Area </h3>
+			<p>
+			  some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+			</p>
+	      </div>
+	    </div>
+	  </div>
+    </div>
+  </div>
+
+  <div class="tc">
+	<div class="row w-100">
+	  <div class="title mt4">
+	    <h3><span class="typcn typcn-group"></span> The Team</h3>
+	  </div>
+	  <div class="c">
+	    <div class="row">
+		  <div class="12 col" align="justify">
+			<h3> Short-bio </h3>
+			<p class="w-100">
+				some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
+			</p>
+	  	  </div>
+  	    </div>
+	  </div>
+	</div>
+  </div>
+
+  <div class="tc bgrv">
+	<div class="row w-100">
+	  <div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Data Sources & tools </h3>
+	  </div>
+	  <div class="c">
+	  <div class="row w-100">
+	    <div class="12 col" align="justify">
+		  <div class="row w-100">
+			<div class="6 col">
+			  <h4>Data sources</h4>
+			  <ul>
+				<li><a href="https://www.onemap.gov.sg/apidocs/" target="_blank">Onemap API</a>: MOH ISP Clinics</li>
+				<li><a href="https://tablebuilder.singstat.gov.sg/" target="_blank">SingStat Table Builder</a>: Population</li>
+				<li><a href="https://beta.data.gov.sg/datasets/d_8594ae9ff96d0c708bc2af633048edfb/view" target="_blank">DATA.GOV.SG</a>: MP2019 Subzone</li>
+				<li><a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>: Street network</li>
+			  </ul>
+			</div>
+			<div class="6 col">
+			  <h4>Processing and Analysis</h4>
+			  <ul>
+				<li><a href="https://qgis.org/" target="_blank">QGIS</a>: hexagon generation</li>
+				<li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a>: data processing & calculation</li>
+				<li><a href="https://geopandas.org" target="_blank">GeoPandas</a>: geometry & projection</li>
+				<li><a href="https://osmnx.readthedocs.io/" target="_blank">OSMNX</a>: routing & distance calculation</li>
+			  </ul>
+			</div>
+			</div>
+			<div class="row w-100">
+			<div class="6 col">
+			  <h4>Visualization</h4>
+			  <ul>
+				<li><a href="https://flowmap.blue/" target="_blank">Flowmap.gl</a>: inter-hexagon flow map</li>
+				<li><a href="https://kepler.gl/" target="_blank">Kepler.gl</a>: service intensity map</li>
+				<li><a href="" target="_blank">XXX</a>: charts</li>
+				<li><a href="https://www.mapbox.com/" target="_blank">Mapbox</a>: web map for Kepler.gl map</li>
+				<li><a href="https://maplibre.org/" target="_blank">Maplibre</a>: web map for Flowmap.gl map</li>
+			  </ul>
+			</div>
+			<div class="6 col">
+			  <h4>Web design & hosting</h4>
+			  <ul>
+				<li><a href="https://ajusa.github.io/lit/" target="_blank">lit.css</a>: framework</li>
+				<li><a href="https://github.com/catppuccin/palette" target="_blank">Catppuccin</a>: colors</li>
+				<li><a href="https://fonts.google.com/specimen/Lora?query=Lora" target="_blank">Google fonts</a>: Lora</li>
+				<li><a href="https://pages.github.com/" target="_blank">Github pages</a>: static site hosting</li>
+				<li><a href="https://www.s-ings.com/typicons/" target="_blank">Typicons</a>: icons</li>
+			  </ul>
+			</div>
+		  </div>
+	    </div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+
+
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/jquery.js"></script>
