@@ -23,6 +23,7 @@
   
   
   
+  
   <!--<link rel="stylesheet" href="css/popup_modal.css">--> 
   <!--<link rel="stylesheet" href="css/icons/academicons.min.css">-->
   <!--<link rel="stylesheet" href="css/icons/microns.css">-->
@@ -32,7 +33,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.ico">
 
-  <link rel="stylesheet" href="/sg_health_access/assets/index-98b27988.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-c9e02b53.css">
 </head>
 <body class="bg-black">
     
@@ -46,14 +47,14 @@
       <!--<a class="btn primary bg-info pill ph4" href="#wrap">explore</a>-->
     </div>
 	<div class="tc vh-100" style='
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    z-index: -1;
-    background-size: cover;
-    background-image:url(&quot;images/ee.png&quot;); opacity:0.3;'>
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		bottom: 0px;
+		left: 0px;
+		z-index: -1;
+		background-size: cover;
+		background-image:url(&quot;/sg_health_access/assets/sg_2-f4c5b9ea.png&quot;); opacity:0.2;'>
 	</div>
     </div>
   </div>
@@ -101,18 +102,27 @@
 		  
 	  <div class="row pv0">
 	    <div class="c">
-	      <div class="12 col" align="justify">
-		    <p>
-				<!--Health-care service is crucial to everyone's daily life. Clinics, compared to medical centers and hospitals, are more accessible for people. In a densely populated city like Singapore, there are people everywhere, and the clinics are also distributed in every neighborhood. However, the question on "<i>is there differences in terms of accessibility to clinics</i>" remains important for exploration. -->
-				As one of the most densely populated countries in the world, Singapore faces unique challenges in ensuring equal access to healthcare for all. With nearly 6 million people living on an area smaller than New York City, transportation and crowdedness can be a major barrier to accessing clinics. The high density of population has led to an increased demand for healthcare services, putting strain on the country's medical infrastructure.
-			</p>
-		    <p>
-				<!--This project is inspired by the 2-Step Floating Catchment Area (2SFCA) approach and the radiation model. 
-				2SFCA included two steps: calculate the ratio of the number of services to population in the service area; and sum up the ratios within the service area. Therefore, the threshold value of travel distance or time is a key in defining the service area. 
-				Radiation model is often used to estimate the flows between a pair of locations for some purposes of travel. Using radiation model, we can estimate the flows between places to access a health-care facility, e.g., clinics. The flows can then be used as a direct measurement of the population in service area for the first step of 2SFCA. In this pilot project, we intended to test the feasibility and issues of this framework. -->
-				Therefore, although clinics are located in every neighborhood, the quality and intensity of healthcare services could vary between people living in different parts of the city state, leading to disparities in access. This project seeks to address these issues by encouraging creative solutions to measure the availability of clinics and the intensity of the healthcare services throughout the country. In this project, we present a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). 
-			</p>
-	      </div>
+		  <div class="row">
+			<div class="8 col" align="justify">
+				<div align="center">
+				<h1><span class="typcn typcn-news"> </span></h1>
+				<h4>Background</h4>
+				</div>
+				As one of the most densely populated countries in the world, Singapore faces unique challenges in ensuring equal access to healthcare for all. With nearly 6 million people living on an area smaller than New York City, transportation and crowdedness can be a major barrier to accessing clinics. The high density of population has led to an increased demand for healthcare services, putting strain on the country's medical infrastructure. Although clinics are located in every neighborhood, the quality and intensity of healthcare services could vary between people living in different parts of the city state, leading to disparities in access. 
+			</div>
+		  </div>
+		  <div class="row pv2">
+			<div class="6 col" align="center">
+				<h1><span class="typcn typcn-zoom"> </span></h1>
+				<h4> Problem</h4>
+				The spatial distribution of the availability and accessibility of healthcare services requires more exploration and analysis.
+			</div>
+			<div class="6 col" align="center">
+				<h1><span class="typcn typcn-lightbulb"> </span></h1>
+				<h4>Solution</h4>
+				This project presents a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). 
+			</div>
+		  </div>
 	    </div>
 	  </div>
     </div>
@@ -120,25 +130,28 @@
   </div>
 	
 
-  <div class="tc">
+  <div class="tc vh-100 pv3">
 	<div class="row w-100">
-	  <div class="title mt2">
-	    <h3><span class="typcn typcn-arrow-maximise"></span> Flow Estimation </h3>
-	  </div>
 	  <div class="row">
 		<div class="c">
-	      <div class="12 col w-100" align="justify">
-		  <iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="400"></iframe> 
-		  <p>
-			The widths of arrows indicate the flow size. The size of circles show the total incoming/outgoing flows. Black circles: more outgoing, white circles with inner ring: more incoming, white circles: almost same. 
-			<a href="./flowmapgl_radiation_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
-		  </p>
-		  <p class="pv1">
-		  <h5>Observation</h5>
-		  <p>
-			some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
-		  </p>
-		  <p class="pv4"></p>
+	      <div class="12 col" align="justify">
+			<div class="9 col">
+			  <div class="w-100 vh-100">
+		  		<iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="85%"></iframe> 
+			  </div>
+			</div>
+			<div class="3 col" align="justify">
+			  <div id="box1" class="pv2">
+				<div class="title mt2" align="center">
+				<h3><span class="typcn typcn-arrow-maximise"></span></h3> 
+				<h3>Flow Estimation </h3>
+				</div>
+				<p>
+					The widths of arrows indicate the flow size. The size of circles show the total incoming/outgoing flows. Black circles: more outgoing, white circles with inner ring: more incoming, white circles: almost same. 
+					<a href="./flowmapgl_radiation_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
+				</p>
+			  </div>
+			</div>
 	      </div>
 		</div>
 	  </div>
@@ -146,19 +159,29 @@
   </div>
 	
   <div class="bgrv">
-  <div class="tc">
+  <div class="tc vh-100 pv3">
 	<div class="row w-100">
-	  <div class="title mt2">
-	    <h3><span class="typcn typcn-location"></span> Service Intensity </h3>
-	  </div>
 	  <div class="c">
 	    <div class="row">
-	      <div class="12 col w-100" align="justify">
-		    <iframe src="./keplergl-accessibility_clinic/index.html" title="Accessibility and inflow" width="100%" height="400"></iframe> 
-			<p>
+	      <div class="9 col">
+			<div class="w-100 vh-100">
+		    	<iframe src="./keplergl-accessibility_clinic/index.html" title="Accessibility and inflow" width="100%" height="85%" frameborder="0"></iframe> 
+			</div>
+		  </div>
+	      <div class="3 col" align="justify">
+			<div id="box1" class="pv2">
+				<div class="title mt2" align="center">
+					<h1><span class="typcn typcn-location"></span> </h1>
+					<h3>Service Intensity </h3>
+			  	</div>
 				The received service intensities are calculated based on a 2SFCA approach. The underlying hexagon cells show the number of clinics at each location. The size and colors of circles indicate the health-care intensities. 
-				<a href="./keplergl-accessibility_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
-			</p>
+				<a href="./keplergl-accessibility_clinic/index.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full page map.</a> 
+			</div>
+			<!--<a class="btn primary" href="">Observation note</a>-->
+		  </div>
+		</div><!--
+		<div class="row">
+		  <div>
 			<p class="pv1">
 			<h5>Observation</h5>
 		  <p>
@@ -166,7 +189,7 @@
 		  </p>
 		  <p class="pv4"></p>
 	      </div>
-	    </div>
+	    </div>-->
 	  </div>
     </div>
   </div>
@@ -197,27 +220,48 @@
 	  <div class="c">	  
   	    <div class="row">
 	      <div class="12 col" align="justify">
-		    <h3> <span class="typcn typcn-minus"></span> Distance estimation: Dijkstra algorithm </h3>
-		    <p>
-			  Before the estimation of flows using radiation model, the travel distances between every pair of spatial units (hexagon cells) are needed. To do this, <a href="https://osmnx.readthedocs.io/" target="_blank">OSMNX</a> package (a Python package) was used for the routing. <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>'s road networks (driving) were used in OSMNX. Dijkstra algorithm was used in OSMNX, which returned the shortest path between two locations (the centroid of hexagons) traveling on the specified road network. The travel distances between all pairs of hexagon cells were used to generate a complete graph, that indicated the cost of travels. 
-		    </p>
-		    <h3> <span class="typcn typcn-equals"></span> Flow estimation: Radiation model </h3>
-			<p>
-			  Radiation model compare the services at the targeted locations with the aggregated services within the nearby areas, i.e., with travel distance shorter than the targeted locations. Here, the travel distance is based on the complete graph generated in step 1. The radiation model equation (as in <a href="https://doi.org/10.1038/nature10856" target="_blank">Simini et al. (2012) paper</a>) is shown below. The equation is modified to match with our model setting, e.g., \(n_j\) is the number of clinics in a cell and \(m_i\) is set to 1. 
-			  $${\langle T_{ij} \rangle = T_i \times \frac{m_i n_j}{(m_i+s_{ij})(m_i+n_j+s_{ij})}}$$
-			  $${s_{ij}=\sum_{k \in D_{ij}}n_k}$$
-			  $${D_{ij}=\text{spatial units with a distance shorter than }dist_{ij}}$$
-			</p>
-		    <h3> <span class="typcn typcn-th-menu"></span> Service intensity: 2-Step Floating Catchment Area </h3>
-			<p>
-			  2SFCA is used for estimating accessibility of a service with the consideration of the service-to-population ratio. In simple words, if the service area of a clinic covered a large number of people, the ratio would be low, which indicates that a lower intensity (poorer cares) could be assigned to every person within the service area. Therefore, the first step of 2SFCA is to calculate the ratio (as in <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang (2003) paper</a>):
-			  $${R_j = \frac{S_j}{\sum_{k\in SA_j} P_k }}$$ 
-			  $${SA_j = \text{spatial units in service area of } j}$$
-			  A distance threshold parameter is needed to define service area. 
-			  The second step is to sum up the ratios of spatial units within a service distance for each origin. The equations were modified to match the condition of our model. The resulting index is used to capture the service intensity of every hexagon cells that it received. 
-			  $${A_i = \sum_{j \in S_i} R_j}$$
-			  $${S_i = \text{destination within the distance threshold}}$$
-			</p>
+
+			<section class="ac-container">
+				<div>
+				<input id="ac-1" name="accordion-1" type="radio" checked="">
+				<label for="ac-1"><span class="typcn typcn-th-large"></span> Framework Overview</label>
+				<article class="ac-small">
+					<p>The framework contains 3 main parts. The first step is to calculate the hex-to-hex distance traveling on the road network; the second step is to estimate the flows given the locations of clinics and populations; third step is to calculate the intensity of healthcare services. </p>
+				</article>
+				</div>
+				<div>
+				<input id="ac-2" name="accordion-1" type="radio">
+				<label for="ac-2"><span class="typcn typcn-minus"></span> Distance estimation: Dijkstra algorithm </label>
+				<article class="ac-small">
+					<p>Before the estimation of flows using radiation model, the travel distances between every pair of spatial units (hexagon cells) are needed. To do this, <a href="https://osmnx.readthedocs.io/" target="_blank">OSMNX</a> package (a Python package) was used for the routing. <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a>'s road networks (driving) were used in OSMNX. Dijkstra algorithm was used in OSMNX, which returned the shortest path between two locations (the centroid of hexagons) traveling on the specified road network. The travel distances between all pairs of hexagon cells were used to generate a complete graph, that indicated the cost of travels. </p>
+				</article>
+				</div>
+				<div>
+				<input id="ac-3" name="accordion-1" type="radio">
+				<label for="ac-3"> <span class="typcn typcn-equals"></span> Flow estimation: Radiation model </label>
+				<article class="ac-medium">
+					<p>Radiation model compare the services at the targeted locations with the aggregated services within the nearby areas, i.e., with travel distance shorter than the targeted locations. Here, the travel distance is based on the complete graph generated in step 1. The radiation model equation (as in <a href="https://doi.org/10.1038/nature10856" target="_blank">Simini et al. (2012) paper</a>) is shown below. The equation is modified to match with our model setting, e.g., \(n_j\) is the number of clinics in a cell and \(m_i\) is set to 1. 
+					$${\langle T_{ij} \rangle = T_i \times \frac{m_i n_j}{(m_i+s_{ij})(m_i+n_j+s_{ij})}}$$
+					$${s_{ij}=\sum_{k \in D_{ij}}n_k}$$
+					$${D_{ij}=\text{spatial units with a distance shorter than }dist_{ij}}$$</p>
+				</article>
+				</div>
+				<div>
+				<input id="ac-4" name="accordion-1" type="radio">
+				<label for="ac-4"><span class="typcn typcn-th-menu"></span> Service intensity: 2-Step Floating Catchment Area</label>
+				<article class="ac-large">
+					<p>2SFCA is used for estimating accessibility of a service with the consideration of the service-to-population ratio. In simple words, if the service area of a clinic covered a large number of people, the ratio would be low, which indicates that a lower intensity (poorer cares) could be assigned to every person within the service area. Therefore, the first step of 2SFCA is to calculate the ratio (as in <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang (2003) paper</a>):
+					$${R_j = \frac{S_j}{\sum_{k\in SA_j} P_k }}$$ 
+					$${SA_j = \text{spatial units in service area of } j}$$
+					A distance threshold parameter is needed to define service area. 
+					The second step is to sum up the ratios of spatial units within a service distance for each origin. The equations were modified to match the condition of our model. The resulting index is used to capture the service intensity of every hexagon cells that it received. 
+					$${A_i = \sum_{j \in S_i} R_j}$$
+					$${S_i = \text{destination within the distance threshold}}$$</p>
+				</article>
+				</div>
+			</section>
+
+
 	      </div>
 	    </div>
 	  </div>
@@ -230,26 +274,28 @@
 	    <h3><span class="typcn typcn-group"></span> The Team</h3>
 	  </div>
 	  <div class="c">
-	    <div class="row" align="justify">
+	    <div class="row pv2" align="justify">
 			<div class="4 col">
 			  <h5><a href="https://scholar.google.com/citations?user=P2IJvyQAAAAJ" target="_blank">Wei Chien Benny CHIN</a></h5>
 			  <span class="line">Research Fellow</span>
-			  <p>Role: Conceptualize, Analyze, Visualize</p>
+			  <!--<p>Role: Conceptualize, Analyze, Visualize</p>-->
 			</div>
 			<div class="4 col">
 			  <h5><a href="https://scholar.google.com/citations?user=6kEF9e0AAAAJ" target="_blank">Chen-Chieh FENG</a></h5>
 			  <span class="line">Associate Professor</span>
-			  <p>Role: Project Coordinate, Discussion</p>
+			  <!--<p>Role: Project Coordinate, hardwares, Discussion</p>-->
 			</div>
 			<div class="4 col">
 			  <h5><a href="https://scholar.google.com/citations?user=YP_hcWwAAAAJ" target="_blank">Yi-Chen WANG</a></h5>
 			  <span class="line">Associate Professor</span>
-			  <p>Role: Supervise, Project Coordinate, Discussion</p>
+			  <!--<p>Role: Supervise, Project Coordinate, Discussion</p>-->
 			</div>
   	    </div>
+		<div class="row pv2">
 		  <h5>Affiliation</h5>
 		  <a href="https://nusgis.org/" target="_blank">GIS Unit</a>, <a href="https://fass.nus.edu.sg/geog/" target="_blank">Department of Geography</a>, <a href="https://nus.edu.sg/" target="_blank">National University of Singapore</a>
-		  <p class="pv2">
+		  <p class="pv2"></p>
+		</div>
 	  </div>
 	</div>
   </div>
