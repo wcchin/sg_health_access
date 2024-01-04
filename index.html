@@ -37,13 +37,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAt5JREFUOE9Nk1tIVFEYhb89M+loVkpZEzajD3Yzo561CGqsbDRNx+xB0yKJiqyI0u5RRJZFOEVRL1NU2IMRXYhCwRTsRgVdDaKw6PZgeWHmHJ3MHWefGafzcvb5z95rr7X+fwmHI30/sAchYgCElEhjgQC1Mt6RRyKEUGUpCCE5IhyO9EEEMeFT0YPhjWq3whKokkIfAQ4JpzNDOl1pWKyj1I+f378RDPYjhIWYWLuqDeq6Aom1x5MyxYVFWBga+sOXrk+IW/ffyhRnKhKhLgoN6tRsW4fNNop6n58BXaPYk82E5En4zjcyLjFJ6TE4fOh8g3jeGZCaFuT4oRpylhWSNd/N9UY/Tx+3c6zBz4CmUZKfTU5uEVt27OPrly7aWu/jXVlBrN2OeP4uIHt+d1PmdeMpKGWpp4jWlru873xFfcNFdE3Dm59FXkEpG6praWu9R/3hXaxZv5WEhLGIZ+8Csrenm/LiHMMn0zMBMzPnmhKCOsV5WeQVmgAGs1N1B/g7NIym94cZ9Pxi786NuJcsRyB5/eoF/b091PsuMqAFFcCChbns3HtUXSLMPvPy5bOohHO+OnYfPKHaeKPpCg/bW0wGmqYAYuPiqNlzjFmz5yCFYMzoMYrqiAcVK5eyet1mvKsqwwDNikHEA1NfdExOnb3MtBmZEYBflJUsorxyE6XlVdxsukqHweC0Hz1omJiNe3E+ZWs38aTjAQbbk2cuMT1jjmmirgWoO1RLTm4h8xa4aTLa+KhdSVAM8rJY4imievsBPnd9oOXebVaUlJE0Phlxp7lTTk5xhodTEAoNULutCpvNyvEGP7qu4fVkkzxxEr4L1xg7LlGNsyHox49vCJdrlnSlpWO1WJW9xij39f3GYrURZ49TsoPBgOpvfHwCztQ0kBaGh//yuesjYrJj6qBEqiRGAmgOtVRuR8tmBEe+zS0h4XBMDceZcJz/D685VGbbTYBIyEGGBBz5B/YATIPjn1ZcAAAAAElFTkSuQmCC">
   <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
 
-  <link rel="stylesheet" href="/sg_health_access/assets/index-c9e02b53.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-d6b65640.css">
 </head>
 <body class="bg-black">
     
   <!-- Landing Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="full" class="m0">
+  <div id="full" class="m0">   <!-- landing page -->
     <div class="tc vh-100 bg-gray">
     <div class="vc c">
       <h1 id="siteName" class="mega mb0">Health-care Accessibility in Singapore</h1>
@@ -97,7 +97,7 @@
 
 
   
-  <div class="tc vh-100 bgrv">
+  <div class="tc vh-100 bgrv">   <!-- motivation -->
 	<div class="vertical-center">
   	<div class="row w-100 pv1">
 	  <div class="title mt0">
@@ -134,14 +134,14 @@
   </div>
 	
 
-  <div class="tc vh-100 pv3">
+  <div class="tc vh-100 pv3"> <!-- flowmap.gl map -->
 	<div class="row w-100">
 	  <div class="row">
 		<div class="c">
 	      <div class="12 col" align="justify">
 			<div class="9 col">
 			  <div class="w-100 vh-100">
-		  		<iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="85%"></iframe> 
+		  		<iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="85%"  frameborder="0"></iframe> 
 			  </div>
 			</div>
 			<div class="3 col" align="justify">
@@ -161,8 +161,47 @@
 	  </div>
     </div>
   </div>
+
+  <div class="tc bgrv">  <!-- Sankey flow -->
+	<div class="row w-100">
+	  <!--<div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
+	  </div>-->
+	  <div class="c">
+	  <div class="row w-100 pv3">
+		<div class="12 col" align="center">
+			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flows between towns</h3>
+		  <p align="justify">
+			The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
+		  </p>
+			<iframe src="./holoviews-sankey/sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
 	
-  <div class="bgrv">
+  <div class="tc">  <!-- charts -->
+	<div class="row w-100">
+	  <!--<div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
+	  </div>-->
+	  <div class="c">
+	  <div class="row w-100 pv3">
+		<div class="12 col" align="center">
+			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flows between towns</h3>
+		  <p align="justify">
+			The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
+		  </p>
+			<iframe src="./holoviews-sankey/sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+
+
+  <div class="bgrv">  <!-- Kepler.gl map -->
   <div class="tc vh-100 pv3">
 	<div class="row w-100">
 	  <div class="c">
@@ -199,25 +238,8 @@
   </div>
   </div>
 
-  <div class="tc">  <!-- Sankey flow -->
-	<div class="row w-100">
-	  <div class="title mt4">
-	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
-	  </div>
-	  <div class="c">
-	  <div class="row w-100 pv3">
-		<div class="12 col" align="center">
-			<iframe src="./holoviews-sankey/sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
-		  <p>
-			some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
-		  </p>
-		</div>
-	  </div>
-	  </div>
-	</div>
-  </div>
 
-  <div class="tc bgrv">  <!-- Methodology -->
+  <div class="tc">  <!-- Methodology -->
 	<div class="row w-100 pv2">
 	  <div class="title mt2">
 	    <h3><span class="typcn typcn-compass"></span> Methodology </h3>
