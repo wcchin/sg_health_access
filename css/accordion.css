@@ -58,7 +58,7 @@
 }
 
 .ac-container article {
-    background: rgba(255,255,255,0.5);
+    background: var(--ctp-frappe-base);
     margin-top: -1px;
     overflow: hidden;
     height: 0;
@@ -73,11 +73,15 @@
 
 .ac-container article p {
     font-style: normal;
-    color: var(--ctp-latte-text);
+    color: var(--ctp-frappe-text);
     line-height: 23px;
     font-size: 12px;
     padding: 20px;
     font: normal normal 16px var(--font);
+}
+
+.ac-container article a {
+    color: var(--ctp-frappe-blue);
 }
 
 .ac-container input:checked ~ article {

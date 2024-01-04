@@ -6,10 +6,10 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Site title</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="keywords" content="">
+  <title>Health-care Accessibility in Singapore</title>
+  <meta name="description" content="Health Data Visualization Contest 2024">
+  <meta name="author" content="WCBC CCF YCW">
+  <meta name="keywords" content="Health, Singapore, Accessibility">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -18,8 +18,8 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/font.css">
-  <link rel="stylesheet" href="css/timeline.css">
-  <!--<link rel="stylesheet" href="css/navbar.css">-->
+ <!--<link rel="stylesheet" href="css/timeline.css">
+  <link rel="stylesheet" href="css/navbar.css">-->
   <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/lit.css">
   <link rel="stylesheet" href="css/lit-util.css">
@@ -31,14 +31,18 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="icon" type="image/png" href="imagess/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="manifest" href="images/site.webmanifest">
 
 </head>
 <body class="bg-black">
     
   <!-- Landing Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="full" class="m0">
+  <div id="full" class="m0">   <!-- landing page -->
     <div class="tc vh-100 bg-gray">
     <div class="vc c">
       <h1 id="siteName" class="mega mb0">Health-care Accessibility in Singapore</h1>
@@ -92,7 +96,7 @@
 
 
   
-  <div class="tc vh-100 bgrv">
+  <div class="tc vh-100 bgrv">   <!-- motivation -->
 	<div class="vertical-center">
   	<div class="row w-100 pv1">
 	  <div class="title mt0">
@@ -129,14 +133,14 @@
   </div>
 	
 
-  <div class="tc vh-100 pv3">
+  <div class="tc vh-100 pv3"> <!-- flowmap.gl map -->
 	<div class="row w-100">
 	  <div class="row">
 		<div class="c">
 	      <div class="12 col" align="justify">
 			<div class="9 col">
 			  <div class="w-100 vh-100">
-		  		<iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="85%"></iframe> 
+		  		<iframe src="./flowmapgl_radiation_clinic/index.html" title="Flowmap" width="100%" height="85%"  frameborder="0"></iframe> 
 			  </div>
 			</div>
 			<div class="3 col" align="justify">
@@ -156,8 +160,49 @@
 	  </div>
     </div>
   </div>
+
+  <div class="tc bgrv">  <!-- Sankey flow -->
+	<div class="row w-100">
+	  <!--<div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
+	  </div>-->
+	  <div class="c">
+	  <div class="row w-100 pv3">
+		<div class="12 col" align="center">
+			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flows between towns</h3>
+		  <p align="justify">
+			The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
+		  </p>
+			<iframe src="./holoviews-sankey/sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
 	
-  <div class="bgrv">
+  <div class="tc">  <!-- distance histogram charts -->
+	<div class="row w-100">
+	  <!--<div class="title mt4">
+	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
+	  </div>-->
+	  <div class="c">
+	  <div class="row w-100 pv3">
+		<div class="12 col" align="center">
+			<h3><span class="typcn typcn-chart-bar"></span> Travel Distance </h3>
+		  <p align="justify">
+			The chart shows the distribution of travel distances for the people living in the four regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. 
+		  </p>
+		  <div align="center">
+			<iframe src="./holoviews-sankey/histogram_distance.html" title="sankey" width="520" height="820" frameborder="0"></iframe> 
+		  </div>
+		</div>
+	  </div>
+	  </div>
+	</div>
+  </div>
+
+
+  <div class="bgrv">  <!-- Kepler.gl map -->
   <div class="tc vh-100 pv3">
 	<div class="row w-100">
 	  <div class="c">
@@ -194,25 +239,8 @@
   </div>
   </div>
 
-  <div class="tc">
-	<div class="row w-100">
-	  <div class="title mt4">
-	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
-	  </div>
-	  <div class="c">
-	  <div class="row w-100 pv3">
-		<div class="12 col" align="center">
-			<iframe src="./holoviews-sankey/sankey_pln_flow.html" title="sankey" width="900" height="800" frameborder="0"></iframe> 
-		  <p>
-			some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text some text 
-		  </p>
-		</div>
-	  </div>
-	  </div>
-	</div>
-  </div>
 
-  <div class="tc bgrv">
+  <div class="tc">  <!-- Methodology -->
 	<div class="row w-100 pv2">
 	  <div class="title mt2">
 	    <h3><span class="typcn typcn-compass"></span> Methodology </h3>
@@ -268,39 +296,8 @@
     </div>
   </div>
 
-  <div class="tc">
-	<div class="row w-100">
-	  <div class="title mt4">
-	    <h3><span class="typcn typcn-group"></span> The Team</h3>
-	  </div>
-	  <div class="c">
-	    <div class="row pv2" align="justify">
-			<div class="4 col">
-			  <h5><a href="https://scholar.google.com/citations?user=P2IJvyQAAAAJ" target="_blank">Wei Chien Benny CHIN</a></h5>
-			  <span class="line">Research Fellow</span>
-			  <!--<p>Role: Conceptualize, Analyze, Visualize</p>-->
-			</div>
-			<div class="4 col">
-			  <h5><a href="https://scholar.google.com/citations?user=6kEF9e0AAAAJ" target="_blank">Chen-Chieh FENG</a></h5>
-			  <span class="line">Associate Professor</span>
-			  <!--<p>Role: Project Coordinate, hardwares, Discussion</p>-->
-			</div>
-			<div class="4 col">
-			  <h5><a href="https://scholar.google.com/citations?user=YP_hcWwAAAAJ" target="_blank">Yi-Chen WANG</a></h5>
-			  <span class="line">Associate Professor</span>
-			  <!--<p>Role: Supervise, Project Coordinate, Discussion</p>-->
-			</div>
-  	    </div>
-		<div class="row pv2">
-		  <h5>Affiliation</h5>
-		  <a href="https://nusgis.org/" target="_blank">GIS Unit</a>, <a href="https://fass.nus.edu.sg/geog/" target="_blank">Department of Geography</a>, <a href="https://nus.edu.sg/" target="_blank">National University of Singapore</a>
-		  <p class="pv2"></p>
-		</div>
-	  </div>
-	</div>
-  </div>
 
-  <div class="tc bgrv">
+  <div class="tc bgrv">  <!-- Data Sources & tools -->
 	<div class="row w-100">
 	  <div class="title mt4">
 	    <h3><span class="typcn typcn-spanner"></span> Data Sources & tools </h3>
@@ -356,14 +353,47 @@
 	</div>
   </div>
 
+  <div class="tc">  <!-- The Team -->
+	<div class="row w-100">
+	  <div class="title mt4">
+	    <h3><span class="typcn typcn-group"></span> The Team</h3>
+	  </div>
+	  <div class="c">
+	    <div class="row pv2" align="justify">
+			<div class="4 col">
+			  <h5><a href="https://scholar.google.com/citations?user=P2IJvyQAAAAJ" target="_blank">Wei Chien Benny CHIN</a></h5>
+			  <span class="line">Research Fellow</span>
+			  <!--<p>Role: Conceptualize, Analyze, Visualize</p>-->
+			</div>
+			<div class="4 col">
+			  <h5><a href="https://scholar.google.com/citations?user=6kEF9e0AAAAJ" target="_blank">Chen-Chieh FENG</a></h5>
+			  <span class="line">Associate Professor</span>
+			  <!--<p>Role: Project Coordinate, hardwares, Discussion</p>-->
+			</div>
+			<div class="4 col">
+			  <h5><a href="https://scholar.google.com/citations?user=YP_hcWwAAAAJ" target="_blank">Yi-Chen WANG</a></h5>
+			  <span class="line">Associate Professor</span>
+			  <!--<p>Role: Supervise, Project Coordinate, Discussion</p>-->
+			</div>
+  	    </div>
+		<div class="row pv2">
+		  <!--<h5>Affiliation</h5>-->
+		  <img src="images/favicon-32x32.png">
+		  <p align="cener">
+		  <a href="https://nusgis.org/" target="_blank">GIS Unit</a>, <a href="https://fass.nus.edu.sg/geog/" target="_blank">Department of Geography</a>, <a href="https://nus.edu.sg/" target="_blank">National University of Singapore</a>
+		  </p>
+		</div>
+	  </div>
+	</div>
+  </div>
 
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="js/jquery.js"></script>
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  <script src="js/remarkable.min.js"></script>
-  <!--<script src="js/chart.js"></script>
+  <!--<script src="js/remarkable.min.js"></script>
+  <script src="js/chart.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/this_site.js"></script>
   <script src="js/popup_modal.js"></script>-->

@@ -12,7 +12,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         nested1: resolve(__dirname, 'flowmapgl_radiation_clinic/index.html'),
         nested2: resolve(__dirname, 'keplergl-accessibility_clinic/index.html'),
-        nested3: resolve(__dirname, 'holoviews-sankey/sankey_pln_flow.html')
+        nested3: resolve(__dirname, 'holoviews-sankey/sankey_pln_flow.html'),
+        nested4: resolve(__dirname, 'holoviews-sankey/histogram_distance.html')
       },
     },
   },
