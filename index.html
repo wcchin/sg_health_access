@@ -31,7 +31,7 @@
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="imagess/favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -39,10 +39,28 @@
 
 </head>
 <body class="bg-black">
-    
+	
+  <div class="navbar-back" align="center">
+  <div class="c">
+  <div id="navbar" class="row">
+	<a href="#"></a>
+	<a href="#full"><span class="typcn typcn-home"></span> Home</a>
+	<a href="#motivation"><span class="typcn typcn-coffee"></span> Motivation</a>
+	<a href="#flowmapgl"><span class="typcn typcn-arrow-maximise"></span> Flow Map</a>
+	<a href="#sankey"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flow between towns</a>
+	<a href="#histogram"><span class="typcn typcn-chart-bar"></span> Histogram of Flow</a>
+	<a href="#keplergl"><span class="typcn typcn-location"></span> Intensity Map</a>
+	<a href="#method"><span class="typcn typcn-compass"></span> Method</a>
+	<a href="#tools"><span class="typcn typcn-spanner"></span> Tools</a>
+	<a href="#team"><span class="typcn typcn-group"></span> Team</a>
+  </div> 
+  </div>
+  </div>
+
+  <div class="scroll-container">  <!-- for scroll snap-->
   <!-- Landing Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="full" class="m0">   <!-- landing page -->
+  <div id="full" class="m0 scroll-child">   <!-- landing page -->
     <div class="tc vh-100 bg-gray">
     <div class="vc c">
       <h1 id="siteName" class="mega mb0">Healthcare Accessibility in Singapore</h1>
@@ -61,42 +79,9 @@
 	</div>
     </div>
   </div>
-  
-  <!-- Navbar
-  –––––––––––––––––––––––––––––––––––––––––––––––––– 
-  <div class="c">
-    <div class="pv2 row" id="wrap">
-      <div class="col nav-item"><b id="siteNameNav"></b></div>
-    </div>
-  </div>-->
-  <!--
-  <div class="c">
-    <div class="pv2 row" id="wrap">
-      <div class="col" id="navlist"></div>
-      <div class="2 col"><b id="siteNameNav" class="nav-item pv2"></b></div>
-    </div>
-  </div>
-  -->
-  
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--
-  <div class="c">
-	<div class="tab-content" id="tab-location">
-	  <div class="w-100" id="Motivation"></div>
-	  <div class="w-100" id="Radiation model"></div>
-	  <div class="w-100" id="Accessibility"></div>
-	</div>
-  </div>-->  <!-- c, container -->
-  
-    <!-- the top button
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<button id="topBtn" class="btn primary">Primary Button</button>-->
-  <!--<a id="topBtn" class="btn primary bg-info pill" href="#wrap"><span class="mu mu-up"></span>Top</a>-->
-
 
   
-  <div class="tc vh-100 bgrv">   <!-- motivation -->
+  <div id="motivation" class="tc vh-100 bgrv scroll-child">   <!-- motivation -->
 	<div class="vertical-center">
   	<div class="row w-100 pv1">
 	  <div class="title mt0">
@@ -133,7 +118,7 @@
   </div>
 	
 
-  <div class="tc vh-100 pv3"> <!-- flowmap.gl map -->
+  <div id="flowmapgl" class="tc vh-100 pv3 scroll-child"> <!-- flowmap.gl map -->
 	<div class="row w-100">
 	  <div class="row">
 		<div class="c">
@@ -161,7 +146,7 @@
     </div>
   </div>
 
-  <div class="tc bgrv">  <!-- Sankey flow -->
+  <div id="sankey" class="tc bgrv scroll-child">  <!-- Sankey flow -->
 	<div class="row w-100">
 	  <!--<div class="title mt4">
 	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
@@ -180,7 +165,7 @@
 	</div>
   </div>
 	
-  <div class="tc">  <!-- distance histogram charts -->
+  <div id="histogram" class="tc scroll-child">  <!-- distance histogram charts -->
 	<div class="row w-100">
 	  <!--<div class="title mt4">
 	    <h3><span class="typcn typcn-spanner"></span> Explorations </h3>
@@ -202,7 +187,7 @@
   </div>
 
 
-  <div class="bgrv">  <!-- Kepler.gl map -->
+  <div id="keplergl" class="bgrv scroll-child">  <!-- Kepler.gl map -->
   <div class="tc vh-100 pv3">
 	<div class="row w-100">
 	  <div class="c">
@@ -240,7 +225,7 @@
   </div>
 
 
-  <div class="tc">  <!-- Methodology -->
+  <div id="method" class="tc scroll-child">  <!-- Methodology -->
 	<div class="row w-100 pv2">
 	  <div class="title mt2">
 	    <h3><span class="typcn typcn-compass"></span> Methodology </h3>
@@ -297,7 +282,7 @@
   </div>
 
 
-  <div class="tc bgrv">  <!-- Data Sources & tools -->
+  <div id="tools" class="tc bgrv scroll-child">  <!-- Data Sources & tools -->
 	<div class="row w-100">
 	  <div class="title mt4">
 	    <h3><span class="typcn typcn-spanner"></span> Data Sources & tools </h3>
@@ -307,7 +292,7 @@
 	    <div class="12 col" align="justify">
 		  <div class="row w-100">
 			<div class="6 col">
-			  <h4>Data sources</h4>
+			  <h4><span class="typcn typcn-weather-cloudy"></span> Data sources</h4>
 			  <ul>
 				<li><a href="https://www.onemap.gov.sg/apidocs/" target="_blank">Onemap API</a>: MOH ISP Clinics</li>
 				<li><a href="https://tablebuilder.singstat.gov.sg/" target="_blank">SingStat Table Builder</a>: Population</li>
@@ -316,7 +301,7 @@
 			  </ul>
 			</div>
 			<div class="6 col">
-			  <h4>Processing and Analysis</h4>
+			  <h4><span class="typcn typcn-device-laptop"></span> Processing and Analysis</h4>
 			  <ul>
 				<li><a href="https://qgis.org/" target="_blank">QGIS</a>: hexagon generation</li>
 				<li><a href="https://pandas.pydata.org/" target="_blank">Pandas</a>: data processing & calculation</li>
@@ -327,7 +312,7 @@
 			</div>
 			<div class="row w-100">
 			<div class="6 col">
-			  <h4>Visualization</h4>
+			  <h4><span class="typcn typcn-brush"></span> Visualization</h4>
 			  <ul>
 				<li><a href="https://flowmap.blue/" target="_blank">Flowmap.gl</a>: inter-hexagon flow map</li>
 				<li><a href="https://kepler.gl/" target="_blank">Kepler.gl</a>: service intensity map</li>
@@ -337,7 +322,7 @@
 			  </ul>
 			</div>
 			<div class="6 col">
-			  <h4>Web design & hosting</h4>
+			  <h4><span class="typcn typcn-cloud-storage"></span> Web design & hosting</h4>
 			  <ul>
 				<li><a href="https://ajusa.github.io/lit/" target="_blank">lit.css</a>: framework</li>
 				<li><a href="https://github.com/catppuccin/palette" target="_blank">Catppuccin</a>: colors</li>
@@ -353,7 +338,7 @@
 	</div>
   </div>
 
-  <div class="tc">  <!-- The Team -->
+  <div id="team" class="tc scroll-child">  <!-- The Team -->
 	<div class="row w-100">
 	  <div class="title mt4">
 	    <h3><span class="typcn typcn-group"></span> The Team</h3>
@@ -387,15 +372,16 @@
 	</div>
   </div>
 
+  </div>  <!-- container -->
   <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="js/jquery.js"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <!--<<script src="js/jquery.js"></script>
+  script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script src="js/this_site.js"></script>
   <!--<script src="js/remarkable.min.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/custom.js"></script>
-  <script src="js/this_site.js"></script>
   <script src="js/popup_modal.js"></script>-->
 
 
