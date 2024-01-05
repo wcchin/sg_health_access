@@ -47,7 +47,7 @@ fetchData().then((data) => {
     // Note: deck.gl will be in charge of interaction and event handling
     interactive: false,
     center: [initialViewState.longitude, initialViewState.latitude],
-    zoom: initialViewState.zoom+0,
+    zoom: initialViewState.zoom,
     bearing: initialViewState.bearing,
     pitch: initialViewState.pitch,
   });
@@ -62,7 +62,7 @@ fetchData().then((data) => {
     onViewStateChange: ({viewState}) => {
       map.jumpTo({
         center: [viewState.longitude, viewState.latitude],
-        zoom: viewState.zoom+0,
+        zoom: viewState.zoom,
         bearing: viewState.bearing,
         pitch: viewState.pitch,
       });
