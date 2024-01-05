@@ -37,9 +37,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAt5JREFUOE9Nk1tIVFEYhb89M+loVkpZEzajD3Yzo561CGqsbDRNx+xB0yKJiqyI0u5RRJZFOEVRL1NU2IMRXYhCwRTsRgVdDaKw6PZgeWHmHJ3MHWefGafzcvb5z95rr7X+fwmHI30/sAchYgCElEhjgQC1Mt6RRyKEUGUpCCE5IhyO9EEEMeFT0YPhjWq3whKokkIfAQ4JpzNDOl1pWKyj1I+f378RDPYjhIWYWLuqDeq6Aom1x5MyxYVFWBga+sOXrk+IW/ffyhRnKhKhLgoN6tRsW4fNNop6n58BXaPYk82E5En4zjcyLjFJ6TE4fOh8g3jeGZCaFuT4oRpylhWSNd/N9UY/Tx+3c6zBz4CmUZKfTU5uEVt27OPrly7aWu/jXVlBrN2OeP4uIHt+d1PmdeMpKGWpp4jWlru873xFfcNFdE3Dm59FXkEpG6praWu9R/3hXaxZv5WEhLGIZ+8Csrenm/LiHMMn0zMBMzPnmhKCOsV5WeQVmgAGs1N1B/g7NIym94cZ9Pxi786NuJcsRyB5/eoF/b091PsuMqAFFcCChbns3HtUXSLMPvPy5bOohHO+OnYfPKHaeKPpCg/bW0wGmqYAYuPiqNlzjFmz5yCFYMzoMYrqiAcVK5eyet1mvKsqwwDNikHEA1NfdExOnb3MtBmZEYBflJUsorxyE6XlVdxsukqHweC0Hz1omJiNe3E+ZWs38aTjAQbbk2cuMT1jjmmirgWoO1RLTm4h8xa4aTLa+KhdSVAM8rJY4imievsBPnd9oOXebVaUlJE0Phlxp7lTTk5xhodTEAoNULutCpvNyvEGP7qu4fVkkzxxEr4L1xg7LlGNsyHox49vCJdrlnSlpWO1WJW9xij39f3GYrURZ49TsoPBgOpvfHwCztQ0kBaGh//yuesjYrJj6qBEqiRGAmgOtVRuR8tmBEe+zS0h4XBMDceZcJz/D685VGbbTYBIyEGGBBz5B/YATIPjn1ZcAAAAAElFTkSuQmCC">
   <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
 
-  <script type="module" crossorigin src="/sg_health_access/assets/main-7b268948.js"></script>
+  <script type="module" crossorigin src="/sg_health_access/assets/main-72fb00b7.js"></script>
   <link rel="modulepreload" crossorigin href="/sg_health_access/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/sg_health_access/assets/index-741fff75.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-03759814.css">
 </head>
 <body class="bg-black">
 	
@@ -59,7 +59,7 @@
   </div> 
   </div>
   </div>-->
-
+<!--
   <nav id="nav">
 	<button id="nav-icon" class="btn primary nav-icon"><span class="typcn typcn-th-menu"></span> </button>
 	<ul>
@@ -74,6 +74,21 @@
 	  <li><a href="#team"><span class="typcn typcn-group"></span> Team</a></li>
 	</ul>
   </nav>
+-->
+  <div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close<span class="typcn typcn-delete"></span> </a>
+	<a href="#full"><span class="typcn typcn-home"></span> Home</a>
+	  <a href="#motivation"><span class="typcn typcn-coffee"></span> Motivation</a>
+	  <a href="#flowmapgl"><span class="typcn typcn-arrow-maximise"></span> Flow Map</a>
+	  <a href="#sankey"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements</a>
+	  <a href="#histogram"><span class="typcn typcn-chart-bar"></span> Distances</a>
+	  <a href="#keplergl"><span class="typcn typcn-location"></span> Services</a>
+	  <a href="#method"><span class="typcn typcn-compass"></span> Method</a>
+	  <a href="#tools"><span class="typcn typcn-spanner"></span> Tools</a>
+	  <a href="#team"><span class="typcn typcn-group"></span> Team</a>
+  </div>
+<!-- Use any element to open the sidenav -->
+<button id="nav-icon" class="btn nav-icon"><span class="typcn typcn-th-menu"></span> </button>
 
   <div class="scroll-container">  <!-- for scroll snap-->
   <!-- Landing Page Layout
@@ -100,36 +115,28 @@
 
   
   <div id="motivation" class="tc vh-100 bgrv scroll-child">   <!-- motivation -->
-	<div class="vertical-center">
-  	<div class="row w-100 pv1">
-	  <div class="title mt0">
+	<div class="vc c">
+  	<div class="row w-100">
 	    <h3><span class="typcn typcn-coffee"></span> Motivation</h3>
-	  </div>
-		  
-	  <div class="row pv0">
-	    <div class="c">
+	  <div class="row">
 		  <div class="row">
 			<div class="8 col" align="justify">
 				<div align="center">
-				<h1><span class="typcn typcn-news"> </span></h1>
-				<h4>Background</h4>
+				<h4><span class="typcn typcn-news"> </span>Background</h4>
 				</div>
 				As one of the most densely populated countries in the world, Singapore faces unique challenges in ensuring equal access to healthcare for all. With nearly 6 million people living on an area smaller than New York City, transportation and crowdedness can be a major barrier to accessing clinics. The high density of population has led to an increased demand for healthcare services, putting strain on the country's medical infrastructure. Although clinics are located in every neighborhood, the quality and intensity of healthcare services could vary between people living in different parts of the city state, leading to disparities in access. 
 			</div>
 		  </div>
-		  <div class="row pv2">
+		  <div class="row">
 			<div class="6 col" align="center">
-				<h1><span class="typcn typcn-zoom"> </span></h1>
-				<h4> Problem</h4>
+				<h4><span class="typcn typcn-zoom"> </span> Problem</h4>
 				The spatial distribution of the availability and accessibility of healthcare services requires more exploration and analysis.
 			</div>
 			<div class="6 col" align="center">
-				<h1><span class="typcn typcn-lightbulb"> </span></h1>
-				<h4>Solution</h4>
+				<h4><span class="typcn typcn-lightbulb"> </span> Solution</h4>
 				This project presents a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). 
 			</div>
 		  </div>
-	    </div>
 	  </div>
     </div>
 	</div>
@@ -282,7 +289,7 @@
 				<label for="ac-4"><span class="typcn typcn-th-menu"></span> Service intensity: 2-Step Floating Catchment Area</label>
 				<article class="ac-large">
 					<p>2SFCA is used for estimating accessibility of a service with the consideration of the service-to-population ratio. In simple words, if the service area of a clinic covered a large number of people, the ratio would be low, which indicates that a lower intensity (poorer cares) could be assigned to every person within the service area. Therefore, the first step of 2SFCA is to calculate the ratio (as in <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang (2003) paper</a>):
-					$${R_j = \frac{S_j}{\sum_{k\in SA_j} P_k }}$$ 
+					$${R_j = \frac{N_j}{\sum_{k\in SA_j} P_k }}$$ 
 					$${SA_j = \text{spatial units in service area of } j}$$
 					A distance threshold parameter is needed to define service area. 
 					The second step is to sum up the ratios of spatial units within a service distance for each origin. The equations were modified to match the condition of our model. The resulting index is used to capture the service intensity of every hexagon cells that it received. 
@@ -397,6 +404,7 @@
   script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   
+  <script src="js/this_site.js"></script>
   <!--<script src="js/remarkable.min.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/custom.js"></script>

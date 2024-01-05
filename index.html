@@ -56,7 +56,7 @@
   </div> 
   </div>
   </div>-->
-
+<!--
   <nav id="nav">
 	<button id="nav-icon" class="btn primary nav-icon"><span class="typcn typcn-th-menu"></span> </button>
 	<ul>
@@ -71,6 +71,21 @@
 	  <li><a href="#team"><span class="typcn typcn-group"></span> Team</a></li>
 	</ul>
   </nav>
+-->
+  <div id="mySidenav" class="sidenav">
+	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">close<span class="typcn typcn-delete"></span> </a>
+	<a href="#full"><span class="typcn typcn-home"></span> Home</a>
+	  <a href="#motivation"><span class="typcn typcn-coffee"></span> Motivation</a>
+	  <a href="#flowmapgl"><span class="typcn typcn-arrow-maximise"></span> Flow Map</a>
+	  <a href="#sankey"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements</a>
+	  <a href="#histogram"><span class="typcn typcn-chart-bar"></span> Distances</a>
+	  <a href="#keplergl"><span class="typcn typcn-location"></span> Services</a>
+	  <a href="#method"><span class="typcn typcn-compass"></span> Method</a>
+	  <a href="#tools"><span class="typcn typcn-spanner"></span> Tools</a>
+	  <a href="#team"><span class="typcn typcn-group"></span> Team</a>
+  </div>
+<!-- Use any element to open the sidenav -->
+<button id="nav-icon" class="btn nav-icon"><span class="typcn typcn-th-menu"></span> </button>
 
   <div class="scroll-container">  <!-- for scroll snap-->
   <!-- Landing Page Layout
@@ -97,36 +112,28 @@
 
   
   <div id="motivation" class="tc vh-100 bgrv scroll-child">   <!-- motivation -->
-	<div class="vertical-center">
-  	<div class="row w-100 pv1">
-	  <div class="title mt0">
+	<div class="vc c">
+  	<div class="row w-100">
 	    <h3><span class="typcn typcn-coffee"></span> Motivation</h3>
-	  </div>
-		  
-	  <div class="row pv0">
-	    <div class="c">
+	  <div class="row">
 		  <div class="row">
 			<div class="8 col" align="justify">
 				<div align="center">
-				<h1><span class="typcn typcn-news"> </span></h1>
-				<h4>Background</h4>
+				<h4><span class="typcn typcn-news"> </span>Background</h4>
 				</div>
 				As one of the most densely populated countries in the world, Singapore faces unique challenges in ensuring equal access to healthcare for all. With nearly 6 million people living on an area smaller than New York City, transportation and crowdedness can be a major barrier to accessing clinics. The high density of population has led to an increased demand for healthcare services, putting strain on the country's medical infrastructure. Although clinics are located in every neighborhood, the quality and intensity of healthcare services could vary between people living in different parts of the city state, leading to disparities in access. 
 			</div>
 		  </div>
-		  <div class="row pv2">
+		  <div class="row">
 			<div class="6 col" align="center">
-				<h1><span class="typcn typcn-zoom"> </span></h1>
-				<h4> Problem</h4>
+				<h4><span class="typcn typcn-zoom"> </span> Problem</h4>
 				The spatial distribution of the availability and accessibility of healthcare services requires more exploration and analysis.
 			</div>
 			<div class="6 col" align="center">
-				<h1><span class="typcn typcn-lightbulb"> </span></h1>
-				<h4>Solution</h4>
+				<h4><span class="typcn typcn-lightbulb"> </span> Solution</h4>
 				This project presents a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). 
 			</div>
 		  </div>
-	    </div>
 	  </div>
     </div>
 	</div>
@@ -279,7 +286,7 @@
 				<label for="ac-4"><span class="typcn typcn-th-menu"></span> Service intensity: 2-Step Floating Catchment Area</label>
 				<article class="ac-large">
 					<p>2SFCA is used for estimating accessibility of a service with the consideration of the service-to-population ratio. In simple words, if the service area of a clinic covered a large number of people, the ratio would be low, which indicates that a lower intensity (poorer cares) could be assigned to every person within the service area. Therefore, the first step of 2SFCA is to calculate the ratio (as in <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang (2003) paper</a>):
-					$${R_j = \frac{S_j}{\sum_{k\in SA_j} P_k }}$$ 
+					$${R_j = \frac{N_j}{\sum_{k\in SA_j} P_k }}$$ 
 					$${SA_j = \text{spatial units in service area of } j}$$
 					A distance threshold parameter is needed to define service area. 
 					The second step is to sum up the ratios of spatial units within a service distance for each origin. The equations were modified to match the condition of our model. The resulting index is used to capture the service intensity of every hexagon cells that it received. 
@@ -394,6 +401,7 @@
   script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>-->
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <script type="module" src="js/this_site.js"></script>
+  <script src="js/this_site.js"></script>
   <!--<script src="js/remarkable.min.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/custom.js"></script>

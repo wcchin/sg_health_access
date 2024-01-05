@@ -58,15 +58,6 @@ a:hover {
   background-color: var(--ctp-frappe-mantle);
 }
 
-
-.vertical-center {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
 .line:after {
   content: '\A';
   white-space: pre;
@@ -132,7 +123,7 @@ a:hover {
   color: black;
 }*/
 
-
+/*
 nav {
   mix-blend-mode: difference;
   z-index: 9999;
@@ -192,3 +183,67 @@ nav.active ul {
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
+*/
+#nav-icon {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  height: 45px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  transition: background 0.3s;
+  width: 45px;
+  color: var(--ctp-mocha-blue);
+  border: solid var(--ctp-mocha-blue);
+}
+
+ /* The side navigation menu */
+ .sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 999; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: var(--ctp-frappe-mantle); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 30px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  opacity: 0.9;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--ctp-frappe-subtext0);
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: var(--ctp-mocha-text);
+  background-color: var(--ctp-mocha-mantle);
+  font-weight: bold;
+}
+
+/* Position and style the close button (top right corner) 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}*/
+.sidenav .closebtn {
+  text-align: right;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+} 
