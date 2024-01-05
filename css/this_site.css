@@ -108,15 +108,15 @@ a:hover {
   scroll-snap-align: start;
 }
 
+/*
 #navbar {
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  transition: top 0.3s; 
   z-index: 999;
 }
 
-/* Style the navbar links */
 #navbar a {
   float: left;
   display: block;
@@ -130,4 +130,65 @@ a:hover {
 #navbar a:hover {
   background-color: #ddd;
   color: black;
+}*/
+
+
+nav {
+  mix-blend-mode: difference;
+  z-index: 9999;
+}
+
+nav ul {
+  z-index: 999;
+  position: fixed;
+  top: 60px;
+  right: 5px;
+  height: 100vh;
+  visibility: hidden;
+  pointer-events: none;
+  list-style: none;
+  width: 250px;
+}
+
+nav ul li {
+  z-index: 999;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 0.75em 0;
+  text-align: right;
+}
+
+nav ul li a {
+  z-index: 999;
+  color: var(--ctp-latte-base);
+}
+
+nav.active ul {
+  visibility: visible;
+  pointer-events: initial;
+  transition-delay: 0.2s;
+  z-index: 999;
+}
+
+#nav-icon {
+  position: absolute;
+  background: transparent;
+  cursor: pointer;
+  height: 45px;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  transition: background 0.3s;
+  width: 45px;
+  color: var(--ctp-latte-base);
+}
+
+.active .nav-icon span {
+  display: inline-block;
+  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
 }

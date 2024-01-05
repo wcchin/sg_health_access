@@ -40,7 +40,7 @@
 </head>
 <body class="bg-black">
 	
-  <div class="navbar-back" align="center">
+  <!--<div class="navbar-back" align="center">
   <div class="c">
   <div id="navbar" class="row">
 	<a href="#"></a>
@@ -55,7 +55,22 @@
 	<a href="#team"><span class="typcn typcn-group"></span> Team</a>
   </div> 
   </div>
-  </div>
+  </div>-->
+
+  <nav id="nav">
+	<button id="nav-icon" class="btn primary nav-icon"><span class="typcn typcn-th-menu"></span> </button>
+	<ul>
+	  <li><a href="#full"><span class="typcn typcn-home"></span> Home</a></li>
+	  <li><a href="#motivation"><span class="typcn typcn-coffee"></span> Motivation</a></li>
+	  <li><a href="#flowmapgl"><span class="typcn typcn-arrow-maximise"></span> Estimated Flow</a></li>
+	  <li><a href="#sankey"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements</a></li>
+	  <li><a href="#histogram"><span class="typcn typcn-chart-bar"></span> Distances</a></li>
+	  <li><a href="#keplergl"><span class="typcn typcn-location"></span> Service</a></li>
+	  <li><a href="#method"><span class="typcn typcn-compass"></span> Method</a></li>
+	  <li><a href="#tools"><span class="typcn typcn-spanner"></span> Tools</a></li>
+	  <li><a href="#team"><span class="typcn typcn-group"></span> Team</a></li>
+	</ul>
+  </nav>
 
   <div class="scroll-container">  <!-- for scroll snap-->
   <!-- Landing Page Layout
@@ -154,7 +169,7 @@
 	  <div class="c">
 	  <div class="row w-100 pv3">
 		<div class="12 col" align="center">
-			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flows between towns</h3>
+			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
 		  <p align="justify">
 			The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
 		  </p>

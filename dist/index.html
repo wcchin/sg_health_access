@@ -37,13 +37,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAt5JREFUOE9Nk1tIVFEYhb89M+loVkpZEzajD3Yzo561CGqsbDRNx+xB0yKJiqyI0u5RRJZFOEVRL1NU2IMRXYhCwRTsRgVdDaKw6PZgeWHmHJ3MHWefGafzcvb5z95rr7X+fwmHI30/sAchYgCElEhjgQC1Mt6RRyKEUGUpCCE5IhyO9EEEMeFT0YPhjWq3whKokkIfAQ4JpzNDOl1pWKyj1I+f378RDPYjhIWYWLuqDeq6Aom1x5MyxYVFWBga+sOXrk+IW/ffyhRnKhKhLgoN6tRsW4fNNop6n58BXaPYk82E5En4zjcyLjFJ6TE4fOh8g3jeGZCaFuT4oRpylhWSNd/N9UY/Tx+3c6zBz4CmUZKfTU5uEVt27OPrly7aWu/jXVlBrN2OeP4uIHt+d1PmdeMpKGWpp4jWlru873xFfcNFdE3Dm59FXkEpG6praWu9R/3hXaxZv5WEhLGIZ+8Csrenm/LiHMMn0zMBMzPnmhKCOsV5WeQVmgAGs1N1B/g7NIym94cZ9Pxi786NuJcsRyB5/eoF/b091PsuMqAFFcCChbns3HtUXSLMPvPy5bOohHO+OnYfPKHaeKPpCg/bW0wGmqYAYuPiqNlzjFmz5yCFYMzoMYrqiAcVK5eyet1mvKsqwwDNikHEA1NfdExOnb3MtBmZEYBflJUsorxyE6XlVdxsukqHweC0Hz1omJiNe3E+ZWs38aTjAQbbk2cuMT1jjmmirgWoO1RLTm4h8xa4aTLa+KhdSVAM8rJY4imievsBPnd9oOXebVaUlJE0Phlxp7lTTk5xhodTEAoNULutCpvNyvEGP7qu4fVkkzxxEr4L1xg7LlGNsyHox49vCJdrlnSlpWO1WJW9xij39f3GYrURZ49TsoPBgOpvfHwCztQ0kBaGh//yuesjYrJj6qBEqiRGAmgOtVRuR8tmBEe+zS0h4XBMDceZcJz/D685VGbbTYBIyEGGBBz5B/YATIPjn1ZcAAAAAElFTkSuQmCC">
   <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
 
-  <script type="module" crossorigin src="/sg_health_access/assets/main-c6297b44.js"></script>
+  <script type="module" crossorigin src="/sg_health_access/assets/main-7b268948.js"></script>
   <link rel="modulepreload" crossorigin href="/sg_health_access/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/sg_health_access/assets/index-3af6d55f.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-741fff75.css">
 </head>
 <body class="bg-black">
 	
-  <div class="navbar-back" align="center">
+  <!--<div class="navbar-back" align="center">
   <div class="c">
   <div id="navbar" class="row">
 	<a href="#"></a>
@@ -58,7 +58,22 @@
 	<a href="#team"><span class="typcn typcn-group"></span> Team</a>
   </div> 
   </div>
-  </div>
+  </div>-->
+
+  <nav id="nav">
+	<button id="nav-icon" class="btn primary nav-icon"><span class="typcn typcn-th-menu"></span> </button>
+	<ul>
+	  <li><a href="#full"><span class="typcn typcn-home"></span> Home</a></li>
+	  <li><a href="#motivation"><span class="typcn typcn-coffee"></span> Motivation</a></li>
+	  <li><a href="#flowmapgl"><span class="typcn typcn-arrow-maximise"></span> Estimated Flow</a></li>
+	  <li><a href="#sankey"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements</a></li>
+	  <li><a href="#histogram"><span class="typcn typcn-chart-bar"></span> Distances</a></li>
+	  <li><a href="#keplergl"><span class="typcn typcn-location"></span> Service</a></li>
+	  <li><a href="#method"><span class="typcn typcn-compass"></span> Method</a></li>
+	  <li><a href="#tools"><span class="typcn typcn-spanner"></span> Tools</a></li>
+	  <li><a href="#team"><span class="typcn typcn-group"></span> Team</a></li>
+	</ul>
+  </nav>
 
   <div class="scroll-container">  <!-- for scroll snap-->
   <!-- Landing Page Layout
@@ -157,7 +172,7 @@
 	  <div class="c">
 	  <div class="row w-100 pv3">
 		<div class="12 col" align="center">
-			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Flows between towns</h3>
+			<h3><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
 		  <p align="justify">
 			The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
 		  </p>
