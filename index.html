@@ -255,7 +255,17 @@
 	  <div class="c">	  
   	    <div class="row">
 	      <div class="12 col" align="justify">
-
+			<div align="center">
+			<img src="images/drawing_all-in-one.png" />
+			</div>
+			<p> Two main concepts were used in this project: radiation model (<a href="https://doi.org/10.1038/nature10856" target="_blank">Simini et al. (2012)</a>) and two-steps floating catchment area (2SFCA, <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang (2003)</a>). The chart above provides a brief demonstration of the two concepts. The flow between \(i\) and \(j\) is calculated using:
+				$${\langle T_{ij} \rangle = T_i \times \frac{m_i n_j}{(m_i+s_{ij})(m_i+n_j+s_{ij})}}.$$
+			The service-to-population is calculated using:
+				$${R_j = \frac{N_j}{\sum_{k\in SA_j} P_k }}$$ 
+			and the accessibility is then calculated by using: 
+				$${A_i = \sum_{j \in S_i} R_j}.$$
+			The models were adapted based on our analysis setting. 
+			<!--
 			<section class="ac-container">
 				<div>
 				<input id="ac-1" name="accordion-1" type="radio" checked="">
@@ -295,6 +305,7 @@
 				</article>
 				</div>
 			</section>
+			-->
 
 
 	      </div>
