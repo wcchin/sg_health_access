@@ -5,6 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .title {
   text-align: center;
 }
@@ -90,100 +91,7 @@ a:hover {
 
 
 
-.scroll-container {
-  overflow: scroll;
-  scroll-snap-type: y mandatory;
-}
 
-.scroll-child {
-  scroll-snap-align: start;
-}
-
-/*
-#navbar {
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  transition: top 0.3s; 
-  z-index: 999;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: var(--ctp-latte-blue);
-  font-weight: bold;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}*/
-
-/*
-nav {
-  mix-blend-mode: difference;
-  z-index: 9999;
-}
-
-nav ul {
-  z-index: 999;
-  position: fixed;
-  top: 60px;
-  right: 5px;
-  height: 100vh;
-  visibility: hidden;
-  pointer-events: none;
-  list-style: none;
-  width: 250px;
-}
-
-nav ul li {
-  z-index: 999;
-  font-weight: bold;
-  letter-spacing: 2px;
-  padding: 0.75em 0;
-  text-align: right;
-}
-
-nav ul li a {
-  z-index: 999;
-  color: var(--ctp-latte-base);
-}
-
-nav.active ul {
-  visibility: visible;
-  pointer-events: initial;
-  transition-delay: 0.2s;
-  z-index: 999;
-}
-
-#nav-icon {
-  position: absolute;
-  background: transparent;
-  cursor: pointer;
-  height: 45px;
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  transition: background 0.3s;
-  width: 45px;
-  color: var(--ctp-latte-base);
-}
-
-.active .nav-icon span {
-  display: inline-block;
-  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-*/
 #nav-icon {
   position: absolute;
   background: transparent;
@@ -196,6 +104,10 @@ nav.active ul {
   width: 45px;
   color: var(--ctp-mocha-blue);
   border: solid var(--ctp-mocha-blue);
+  text-align: center;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
  /* The side navigation menu */
@@ -247,3 +159,37 @@ nav.active ul {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } 
+
+.vc {
+    position: relative;
+    top: 40%;
+    transform: perspective(1px) translateY(-45%);
+}
+
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--ctp-frappe-mantle);
+  color: var(--ctp-frappe-text);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: 125%; 
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}

@@ -1,0 +1,91 @@
+
+
+:root {
+    --font: 'Lora';
+    --text-color: var(--ctp-frappe-text);
+    --gray-color: var(--ctp-frappe-overlay1);
+    --primary-color: var(--ctp-frappe-lavender);
+    --warning-color: var(--ctp-frappe-yellow);
+    --error-color: var(--ctp-frappe-red);
+    --success-color: var(--ctp-frappe-green);
+    --info-color: var(--ctp-frappe-blue);
+    --bg-color: var(--ctp-frappe-base);
+}
+
+/*Colors*/
+
+.white{
+	color: var(--ctp-latte-base);
+}
+.bg-white{
+	background-color: var(--ctp-latte-mantle);
+}
+.b-white{
+	border-color: var(--ctp-latte-crust);
+}
+.gray{
+    color: var(--gray-color);
+}
+.bg-gray{
+    background-color: var(--frappe-crust);
+	color: var(--text-color);
+}
+.b-gray{
+    border-color: var(--gray-color);
+}
+.black{
+	color: var(--ctp-frappe-crust);
+}
+.bg-black{
+	background-color: var(--ctp-frappe-crust);
+	color: var(--text-color);
+}
+.b-black{
+	border-color: var(--ctp-frappe-crust);
+}
+.accent {
+	color: var(--primary-color);
+}
+.bg-accent {
+	background-color: var(--primary-color);
+}
+.b-accent {
+	border-color: var(--primary-color);
+}
+.warning {
+	color: var(--warning-color);
+}
+.bg-warning {
+	background-color: var(--warning-color);
+}
+.b-warning {
+	border-color: var(--warning-color);
+}
+.error {
+	color: var(--error-color);
+}
+.bg-error {
+	background-color: var(--error-color);
+}
+.b-error {
+	border-color: var(--error-color);
+}
+.success {
+	color: var(--success-color);
+}
+.bg-success {
+	background-color: var(--success-color);
+}
+.b-success {
+	border-color: var(--success-color);
+}
+.info {
+	color: var(--info-color);
+}
+.bg-info {
+	background-color: var(--info-color);
+	color: var(--ctp-latte-text);
+}
+.b-info {
+	border-color: var(--info-color);
+}
