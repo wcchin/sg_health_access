@@ -32,9 +32,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAt5JREFUOE9Nk1tIVFEYhb89M+loVkpZEzajD3Yzo561CGqsbDRNx+xB0yKJiqyI0u5RRJZFOEVRL1NU2IMRXYhCwRTsRgVdDaKw6PZgeWHmHJ3MHWefGafzcvb5z95rr7X+fwmHI30/sAchYgCElEhjgQC1Mt6RRyKEUGUpCCE5IhyO9EEEMeFT0YPhjWq3whKokkIfAQ4JpzNDOl1pWKyj1I+f378RDPYjhIWYWLuqDeq6Aom1x5MyxYVFWBga+sOXrk+IW/ffyhRnKhKhLgoN6tRsW4fNNop6n58BXaPYk82E5En4zjcyLjFJ6TE4fOh8g3jeGZCaFuT4oRpylhWSNd/N9UY/Tx+3c6zBz4CmUZKfTU5uEVt27OPrly7aWu/jXVlBrN2OeP4uIHt+d1PmdeMpKGWpp4jWlru873xFfcNFdE3Dm59FXkEpG6praWu9R/3hXaxZv5WEhLGIZ+8Csrenm/LiHMMn0zMBMzPnmhKCOsV5WeQVmgAGs1N1B/g7NIym94cZ9Pxi786NuJcsRyB5/eoF/b091PsuMqAFFcCChbns3HtUXSLMPvPy5bOohHO+OnYfPKHaeKPpCg/bW0wGmqYAYuPiqNlzjFmz5yCFYMzoMYrqiAcVK5eyet1mvKsqwwDNikHEA1NfdExOnb3MtBmZEYBflJUsorxyE6XlVdxsukqHweC0Hz1omJiNe3E+ZWs38aTjAQbbk2cuMT1jjmmirgWoO1RLTm4h8xa4aTLa+KhdSVAM8rJY4imievsBPnd9oOXebVaUlJE0Phlxp7lTTk5xhodTEAoNULutCpvNyvEGP7qu4fVkkzxxEr4L1xg7LlGNsyHox49vCJdrlnSlpWO1WJW9xij39f3GYrURZ49TsoPBgOpvfHwCztQ0kBaGh//yuesjYrJj6qBEqiRGAmgOtVRuR8tmBEe+zS0h4XBMDceZcJz/D685VGbbTYBIyEGGBBz5B/YATIPjn1ZcAAAAAElFTkSuQmCC">
   <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
 
-  <script type="module" crossorigin src="/sg_health_access/assets/main-c7fd28b8.js"></script>
+  <script type="module" crossorigin src="/sg_health_access/assets/main-a1b282e1.js"></script>
   <link rel="modulepreload" crossorigin href="/sg_health_access/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/sg_health_access/assets/index-a566226f.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-09646613.css">
 </head>
 <body class="bg-black">
 
@@ -56,7 +56,8 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="scroll-container">
+  <!--<div class="scroll-container">
+  </div>-->
 
     <div style='
       height:100vh;
@@ -69,7 +70,7 @@
       background-size: cover;
       background-image:url(&quot;/sg_health_access/assets/sg_1-bb58fe88.png&quot;); opacity:0.2;'>
     </div>
-  <div id="top" class="section hero bg-gray" style="padding: 40vh; height: 20vh;">
+    <div id="top" class="section hero bg-gray" style="padding-top: 40vh; padding-bottom: 40vh; height: 20vh;">
     <div class="container">
       <div class="row hero-heading">
         <h1 class="title">Healthcare Accessibility in Singapore</h1>
@@ -78,7 +79,7 @@
     </div>
   </div>
 
-  <div id="motivation" class="section bgrv" style="padding-top: 20vh; padding-bottom: 20vh; height: 60vh;">
+  <div id="motivation" class="section bgrv" style="padding-top: 20vh; padding-bottom: 20vh; height: 60vh; min-height: 600px;">
     <div class="container">
       <div class="row">
 	    <h3 class="section-heading"><span class="typcn typcn-coffee"></span> Motivation</h3>
@@ -123,11 +124,19 @@
 
   <div id="sankey" class="section bgrv" style="padding-top: 10rem; padding-bottom: 10rem">
     <div class="container">
-      <h3 class="section-heading"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
-      <p class="section-description" align="justify">
-        The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
-      </p>
-        <iframe src="./interactive/holoviews_sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
+      <div class="row">
+        <div class="twelve columns">
+        <h3 class="section-heading"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
+        <p class="section-description" align="justify">
+        The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. <a href="./interactive/holoviews_sankey_pln_flow.html" target="_blank"><span class="typcn typcn-chart-area"></span> Click here for full-page plot.</a>
+        </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+        <iframe id="holoview-sankey" src="./interactive/holoviews_sankey_pln_flow.html" title="sankey" frameborder="0"></iframe> 
+        </div>
+      </div>
     </div>
   </div>
 
@@ -137,12 +146,12 @@
         <div class="four columns">
             <h3 class="section-heading"><span class="typcn typcn-chart-bar"></span> Travel Distance </h3>
             <p align="justify">
-              The chart shows the distribution of travel distances for the people living in the five regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. 
+              The chart shows the distribution of travel distances for the people living in the five regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. <a href="./interactive/holoviews_histogram_distance.html" target="_blank"><span class="typcn typcn-chart-area"></span> Click here for full-page plot.</a>
             </p>
         </div>
         <div class="eight columns">
             <div align="left">
-              <iframe src="./interactive/holoviews_histogram_distance.html" title="sankey" width="520" height="820" frameborder="0"></iframe> 
+              <iframe id="holoview-hist" src="./interactive/holoviews_histogram_distance.html" title="sankey" frameborder="0"></iframe> 
             </div>
         </div>
       </div>
@@ -172,6 +181,7 @@
       <h3 class="section-heading"><span class="typcn typcn-compass gly-rotate-90"></span> Methodology</h3>
       <div align="center">
         <img class="u-max-full-width" src="/sg_health_access/assets/drawing_all-in-one-36ecb90b.png" />
+        <a href="./images/drawing_all-in-one.png" target="_blank"><span class="typcn typcn-image"></span> Full page image.</a> 
         </div>
       <p class="section-description" align="justify">
         Two main concepts were used in this project: radiation model (<a href="https://doi.org/10.1038/nature10856" target="_blank">Simini et al., 2012</a>) and two-steps floating catchment area (2SFCA, <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang, 2003</a>). The chart above provides a brief demonstration of the two concepts. The flow between \(i\) and \(j\) is calculated using:
@@ -266,7 +276,6 @@
     </div>
   </div>
 
-  </div>
 
 
 <!-- End Document

@@ -6,13 +6,13 @@
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/*
 .scroll-container {
   overflow: auto;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
-
+*/
 .scroll-container .section {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -30,6 +30,16 @@
 .section-landing {
   padding: 8rem 0 7rem;
   text-align: center;
+}
+
+#holoview-sankey {
+  width: 100%; 
+  height: 820px;
+}
+
+#holoview-hist {
+  width: 100%; 
+  height: 820px;
 }
 
 /* Bigger than 550 */
@@ -59,6 +69,10 @@
   }
   .hero-heading {
     font-size: 2.4rem;
+  }
+  #holoview-hist {
+    width: 520px; 
+    height: 820px;
   }
 }
 
@@ -113,5 +127,9 @@
   .phone + .phone {
     top: -14rem;
     max-height: 570px;
+  }
+  #holoview-sankey {
+    width: 950px; 
+    height: 820px;
   }
 }

@@ -53,7 +53,8 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="scroll-container">
+  <!--<div class="scroll-container">
+  </div>-->
 
     <div style='
       height:100vh;
@@ -66,7 +67,7 @@
       background-size: cover;
       background-image:url("images/sg_1.png"); opacity:0.2;'>
     </div>
-  <div id="top" class="section hero bg-gray" style="padding: 40vh; height: 20vh;">
+    <div id="top" class="section hero bg-gray" style="padding-top: 40vh; padding-bottom: 40vh; height: 20vh;">
     <div class="container">
       <div class="row hero-heading">
         <h1 class="title">Healthcare Accessibility in Singapore</h1>
@@ -75,7 +76,7 @@
     </div>
   </div>
 
-  <div id="motivation" class="section bgrv" style="padding-top: 20vh; padding-bottom: 20vh; height: 60vh;">
+  <div id="motivation" class="section bgrv" style="padding-top: 20vh; padding-bottom: 20vh; height: 60vh; min-height: 600px;">
     <div class="container">
       <div class="row">
 	    <h3 class="section-heading"><span class="typcn typcn-coffee"></span> Motivation</h3>
@@ -120,11 +121,19 @@
 
   <div id="sankey" class="section bgrv" style="padding-top: 10rem; padding-bottom: 10rem">
     <div class="container">
-      <h3 class="section-heading"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
-      <p class="section-description" align="justify">
-        The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. 
-      </p>
-        <iframe src="./interactive/holoviews_sankey_pln_flow.html" title="sankey" width="950" height="820" frameborder="0"></iframe> 
+      <div class="row">
+        <div class="twelve columns">
+        <h3 class="section-heading"><span class="typcn typcn-flow-switch gly-rotate-90"></span> Movements between towns</h3>
+        <p class="section-description" align="justify">
+        The alluvial graph show the estimated flows between each town (planning area) to seek for clinics. The colors indicate the region of the towns (blue: Central Region, green: East Region, grey: North Region, red: North-East Region, orange: West Region). Most of the same-towns and same colors conncetions are thick, indicating most of the people move locally for accessing healthcare services. More thin cross-regions/cross-towns lines occurr in blue highlighting that the movements for people living in Central Region are more complex. <a href="./interactive/holoviews_sankey_pln_flow.html" target="_blank"><span class="typcn typcn-chart-area"></span> Click here for full-page plot.</a>
+        </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="twelve columns">
+        <iframe id="holoview-sankey" src="./interactive/holoviews_sankey_pln_flow.html" title="sankey" frameborder="0"></iframe> 
+        </div>
+      </div>
     </div>
   </div>
 
@@ -134,12 +143,12 @@
         <div class="four columns">
             <h3 class="section-heading"><span class="typcn typcn-chart-bar"></span> Travel Distance </h3>
             <p align="justify">
-              The chart shows the distribution of travel distances for the people living in the five regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. 
+              The chart shows the distribution of travel distances for the people living in the five regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. <a href="./interactive/holoviews_histogram_distance.html" target="_blank"><span class="typcn typcn-chart-area"></span> Click here for full-page plot.</a>
             </p>
         </div>
         <div class="eight columns">
             <div align="left">
-              <iframe src="./interactive/holoviews_histogram_distance.html" title="sankey" width="520" height="820" frameborder="0"></iframe> 
+              <iframe id="holoview-hist" src="./interactive/holoviews_histogram_distance.html" title="sankey" frameborder="0"></iframe> 
             </div>
         </div>
       </div>
@@ -169,6 +178,7 @@
       <h3 class="section-heading"><span class="typcn typcn-compass gly-rotate-90"></span> Methodology</h3>
       <div align="center">
         <img class="u-max-full-width" src="images/drawing_all-in-one.png" />
+        <a href="./images/drawing_all-in-one.png" target="_blank"><span class="typcn typcn-image"></span> Full page image.</a> 
         </div>
       <p class="section-description" align="justify">
         Two main concepts were used in this project: radiation model (<a href="https://doi.org/10.1038/nature10856" target="_blank">Simini et al., 2012</a>) and two-steps floating catchment area (2SFCA, <a href="https://doi.org/10.1068/b29120" target="_blank">Luo and Wang, 2003</a>). The chart above provides a brief demonstration of the two concepts. The flow between \(i\) and \(j\) is calculated using:
@@ -263,7 +273,6 @@
     </div>
   </div>
 
-  </div>
 
 
 <!-- End Document
