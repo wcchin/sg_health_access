@@ -89,13 +89,23 @@
       </div>
       <div class="row"><br /></div>
       <div class="row">
-        <div class="one-half column">
+        <div class="one-third column" align="justify">
             <h4><span class="typcn typcn-zoom"> </span> Problem</h4>
             The spatial distribution of the availability and accessibility of healthcare services requires more exploration and analysis.
         </div>
-        <div class="one-half column">
+        <div class="one-third column" align="justify">
             <h4><span class="typcn typcn-lightbulb"> </span> Solution</h4>
-            This project presents a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). 
+            This project presents a framework to measure the healthcare intensity by combining two popular models: radiation models and 2-step floating catchment area (2SFCA). More information about the two models is described in the <a href="#method"><span class="typcn typcn-compass"></span> Method section</a>. 
+        </div>
+        <div class="one-third column" align="justify">
+            <h4><span class="typcn typcn-lightbulb"> </span> Visualization</h4>
+            After the flows were estimated and healthcare intensity were calculated, we show the results below in 4 sections:
+            <ol align="left">
+              <li><a href="#flowmapgl">Flow Estimation Map <span class="typcn typcn-arrow-maximise"></span></a></li>
+              <li><a href="#sankey">Movements between Planning Area <span class="typcn typcn-flow-switch gly-rotate-90"></span></a></li>
+              <li><a href="#histogram">Distribution of Travel Distances <span class="typcn typcn-chart-bar"></span></a></li>
+              <li><a href="#keplergl">Service Intensity Map <span class="typcn typcn-location"></span></a></li>
+            </ol>
         </div>
       </div>
     </div>
@@ -111,8 +121,9 @@
             <h3 class="section-heading"><span class="typcn typcn-arrow-maximise"></span></h3> 
             <h3 class="section-heading">Flow Estimation </h3>
             <p align="justify">
-                The widths of arrows indicate the flow size. The size of circles show the total incoming/outgoing flows. Black circles: more outgoing, white circles with inner ring: more incoming, white circles: almost same. 
-                <a href="./interactive/flowmapgl_radiation_clinic.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>
+                The widths of arrows indicate the flow size. The size of circles show the total incoming/outgoing flows. Dark circles: more outgoing, bright circles with inner ring: more incoming, bright circles: almost same. 
+                <!--<a href="./interactive/flowmapgl_radiation_clinic.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>--> 
+                <a href="https://app.flowmap.city/public/67249d1d-4c21-40e3-8ddb-fd5124907c99" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map and more exploration at different scales.</a> Detailed inter-hexagon flows were shwon as tooltips in the full-page map. Yellow color lines show the relatively lower flows, which could be observe in the full-page map. 
             </p>
         </div>
       </div>
