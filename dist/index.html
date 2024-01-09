@@ -32,9 +32,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAt5JREFUOE9Nk1tIVFEYhb89M+loVkpZEzajD3Yzo561CGqsbDRNx+xB0yKJiqyI0u5RRJZFOEVRL1NU2IMRXYhCwRTsRgVdDaKw6PZgeWHmHJ3MHWefGafzcvb5z95rr7X+fwmHI30/sAchYgCElEhjgQC1Mt6RRyKEUGUpCCE5IhyO9EEEMeFT0YPhjWq3whKokkIfAQ4JpzNDOl1pWKyj1I+f378RDPYjhIWYWLuqDeq6Aom1x5MyxYVFWBga+sOXrk+IW/ffyhRnKhKhLgoN6tRsW4fNNop6n58BXaPYk82E5En4zjcyLjFJ6TE4fOh8g3jeGZCaFuT4oRpylhWSNd/N9UY/Tx+3c6zBz4CmUZKfTU5uEVt27OPrly7aWu/jXVlBrN2OeP4uIHt+d1PmdeMpKGWpp4jWlru873xFfcNFdE3Dm59FXkEpG6praWu9R/3hXaxZv5WEhLGIZ+8Csrenm/LiHMMn0zMBMzPnmhKCOsV5WeQVmgAGs1N1B/g7NIym94cZ9Pxi786NuJcsRyB5/eoF/b091PsuMqAFFcCChbns3HtUXSLMPvPy5bOohHO+OnYfPKHaeKPpCg/bW0wGmqYAYuPiqNlzjFmz5yCFYMzoMYrqiAcVK5eyet1mvKsqwwDNikHEA1NfdExOnb3MtBmZEYBflJUsorxyE6XlVdxsukqHweC0Hz1omJiNe3E+ZWs38aTjAQbbk2cuMT1jjmmirgWoO1RLTm4h8xa4aTLa+KhdSVAM8rJY4imievsBPnd9oOXebVaUlJE0Phlxp7lTTk5xhodTEAoNULutCpvNyvEGP7qu4fVkkzxxEr4L1xg7LlGNsyHox49vCJdrlnSlpWO1WJW9xij39f3GYrURZ49TsoPBgOpvfHwCztQ0kBaGh//yuesjYrJj6qBEqiRGAmgOtVRuR8tmBEe+zS0h4XBMDceZcJz/D685VGbbTYBIyEGGBBz5B/YATIPjn1ZcAAAAAElFTkSuQmCC">
   <link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjoiIiwic2hvcnRfbmFtZSI6IiIsImljb25zIjpbeyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtMTkyeDE5Mi5wbmciLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn0seyJzcmMiOiIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLCJzaXplcyI6IjUxMng1MTIiLCJ0eXBlIjoiaW1hZ2UvcG5nIn1dLCJ0aGVtZV9jb2xvciI6IiNmZmZmZmYiLCJiYWNrZ3JvdW5kX2NvbG9yIjoiI2ZmZmZmZiIsImRpc3BsYXkiOiJzdGFuZGFsb25lIn0=">
 
-  <script type="module" crossorigin src="/sg_health_access/assets/main-a1b282e1.js"></script>
+  <script type="module" crossorigin src="/sg_health_access/assets/main-d7c2935b.js"></script>
   <link rel="modulepreload" crossorigin href="/sg_health_access/assets/modulepreload-polyfill-3cfb730f.js">
-  <link rel="stylesheet" href="/sg_health_access/assets/index-09646613.css">
+  <link rel="stylesheet" href="/sg_health_access/assets/index-f44a8b24.css">
 </head>
 <body class="bg-black">
 
@@ -75,6 +75,7 @@
       <div class="row hero-heading">
         <h1 class="title">Healthcare Accessibility in Singapore</h1>
         <h4>A pilot study for building the model</h4>
+        <a class="button button-cat" href="#motivation">Let's start the exploration!</a>
       </div>
     </div>
   </div>
@@ -109,6 +110,7 @@
               <li><a href="#histogram">Distribution of Travel Distances <span class="typcn typcn-chart-bar"></span></a></li>
               <li><a href="#keplergl">Service Intensity Map <span class="typcn typcn-location"></span></a></li>
             </ol>
+            <a class="button button-cat" href="#flowmapgl">The first map.</a>
         </div>
       </div>
     </div>
@@ -128,6 +130,7 @@
                 <!--<a href="./interactive/flowmapgl_radiation_clinic.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map.</a>--> 
                 <a href="https://app.flowmap.city/public/67249d1d-4c21-40e3-8ddb-fd5124907c99" target="_blank"><span class="typcn typcn-map"></span> Click here for full-page map and more exploration at different scales.</a> Detailed inter-hexagon flows were shwon as tooltips in the full-page map. Yellow color lines show the relatively lower flows, which could be observe in the full-page map. 
             </p>
+            <a class="button button-cat" href="#sankey">See the flows aggregated by towns.</a>
         </div>
       </div>
     </div>
@@ -147,6 +150,7 @@
         <div class="twelve columns">
         <iframe id="holoview-sankey" src="./interactive/holoviews_sankey_pln_flow.html" title="sankey" frameborder="0"></iframe> 
         </div>
+        <a class="button button-cat" href="#histogram">How does the travel distances distributed?</a>
       </div>
     </div>
   </div>
@@ -159,6 +163,7 @@
             <p align="justify">
               The chart shows the distribution of travel distances for the people living in the five regions of Singapore. The chart highlighted the longer travel distances could be made by people living in the Central Region compared to the other four regions. <a href="./interactive/holoviews_histogram_distance.html" target="_blank"><span class="typcn typcn-chart-area"></span> Click here for full-page plot.</a>
             </p>
+            <a class="button button-cat" href="#keplergl">The main result map. </a>
         </div>
         <div class="eight columns">
             <div align="left">
@@ -182,6 +187,7 @@
                 The received service intensities are calculated based on a 2SFCA approach. The underlying hexagon cells show the total incoming flows to each hexagon cell (with at least 1 clinic). The size and colors of circles indicate the health-care intensities. 
 				<a href="./interactive/keplergl_accessibility_clinic.html" target="_blank"><span class="typcn typcn-map"></span> Click here for full page map.</a> 
             </p>
+            <a class="button button-cat" href="#method">The methods. </a>
         </div>
       </div>
     </div>
@@ -203,6 +209,7 @@
 				$${A_i = \sum_{j \in S_i} R_j}.$$
 			The models were adapted based on our analysis setting. 
       </p>
+      <a class="button button-cat" href="#tools">The tools and team. </a>
     </div>
   </div>
 

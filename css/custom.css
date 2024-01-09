@@ -3,7 +3,28 @@
 .button {
   border-radius: 100px;
 }
+.button.button-cat,
+button.button-cat,
+input[type="submit"].button-cat,
+input[type="reset"].button-cat,
+input[type="button"].button-cat {
+  color: var(--ctp-mocha-crust);
+  background-color: var(--ctp-mocha-lavender);
+  border-color: var(--ctp-mocha-blue) }
 
+  .button.button-cat:hover,
+  button.button-cat:hover,
+  input[type="submit"].button-cat:hover,
+  input[type="reset"].button-cat:hover,
+  input[type="button"].button-cat:hover,
+  .button.button-cat:focus,
+  button.button-cat:focus,
+  input[type="submit"].button-cat:focus,
+  input[type="reset"].button-cat:focus,
+  input[type="button"].button-cat:focus {
+    color: var(--ctp-latte-crust);
+    background-color: var(--ctp-latte-lavender);
+    border-color: var(--ctp-latte-lavender); }
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /*
